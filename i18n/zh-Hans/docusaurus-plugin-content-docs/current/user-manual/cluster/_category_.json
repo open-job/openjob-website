@@ -1,6 +1,6 @@
 {
-  "label": "About Openjob",
-  "position": 2,
+  "label": "集群管理",
+  "position": 7,
   "link": {
     "type": "generated-index",
     "description": "5 minutes to learn the most important Docusaurus concepts."
