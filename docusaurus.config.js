@@ -77,20 +77,20 @@ const config = {
         },
         items: [
           {
-            type: 'docsVersionDropdown',
+            type: 'doc',
             docId: 'intro',
-            position: 'right',
+            position: 'left',
             label: 'Tutorial',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
             type: 'localeDropdown',
             position: 'right'
+          },
+          {
+            href: 'https://github.com/open-job/openjob',
+            label: 'GitHub',
+            position: 'right',
           }
         ],
       },

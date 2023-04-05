@@ -1,18 +1,18 @@
 {
   "title": {
-    "message": "My Site",
-    "description": "The title in the navbar"
+    "message": "Openjob",
+    "description": "Openjob 分布式任务调度框架"
   },
   "item.label.Tutorial": {
-    "message": "教程",
-    "description": "Navbar item with label Tutorial"
+    "message": "文档",
+    "description": "Openjob 官方文档"
   },
   "item.label.Blog": {
     "message": "博客",
-    "description": "Navbar item with label Blog"
+    "description": "Openjob 官方博客"
   },
   "item.label.GitHub": {
     "message": "GitHub",
-    "description": "Navbar item with label GitHub"
+    "description": "Openjob github"
   }
 }
