@@ -48,7 +48,7 @@
     "description": "The generated-index page description for category Cron Job in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Delay Job": {
-    "message": "部署指南",
+    "message": "延时任务",
     "description": "The label for category Delay Job in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Delay Job.link.generated-index.description": {
