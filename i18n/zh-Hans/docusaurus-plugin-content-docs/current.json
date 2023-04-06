@@ -4,15 +4,127 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "Tutorial - Basics",
+    "message": "教程 - 基础知识",
     "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "message": "5分钟学习最重要的Docusaurus概念。",
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "Tutorial - Extras",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.About Openjob": {
+    "message": "关于OpenJOB",
+    "description": "The label for category About Openjob in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.About Openjob.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category About Openjob in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Quick Start": {
+    "message": "快速开始",
+    "description": "The label for category Quick Start in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Quick Start.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category Quick Start in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Developer Guide": {
+    "message": "开发指南",
+    "description": "The label for category Developer Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Developer Guide.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category Developer Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cron Job": {
+    "message": "定时任务",
+    "description": "The label for category Cron Job in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cron Job.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category Cron Job in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Delay Job": {
+    "message": "部署指南",
+    "description": "The label for category Delay Job in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Delay Job.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category Delay Job in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Workflow": {
+    "message": "工作流",
+    "description": "The label for category Workflow in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Workflow.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category Workflow in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.User Manual": {
+    "message": "用户手册",
+    "description": "The label for category User Manual in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.User Manual.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category User Manual in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cluster": {
+    "message": "集群",
+    "description": "The label for category Cluster in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cluster.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category Cluster in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.System": {
+    "message": "系统管理",
+    "description": "The label for category System in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.System.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category System in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Other Language": {
+    "message": "其他语言",
+    "description": "The label for category Other Language in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Other Language.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category Other Language in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Golang": {
+    "message": "Golang",
+    "description": "The label for category Golang in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Golang.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category Golang in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.PHP": {
+    "message": "PHP",
+    "description": "The label for category PHP in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.PHP.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category PHP in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Open API": {
+    "message": "Open API",
+    "description": "The label for category Open API in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Open API.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category Open API in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Deploy Guide": {
+    "message": "部署指南",
+    "description": "The label for category Deploy Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Deploy Guide.link.generated-index.description": {
+    "message": "5分钟学习最重要的Docusaurus概念。",
+    "description": "The generated-index page description for category Deploy Guide in sidebar tutorialSidebar"
   }
 }

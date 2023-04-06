@@ -1,8 +1,8 @@
 {
-  "label": "关于 Openjob",
+  "label": "关于OpenJOB",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "5分钟学习最重要的 OpenJob 概念。"
   }
 }
