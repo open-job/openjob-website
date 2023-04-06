@@ -4,6 +4,19 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+
+// TODO: Wait for docusaurus typescript support
+/** @type {import('@docusaurus/types').PluginConfig} */
+const searchLocalPlugin = [
+  require.resolve('@easyops-cn/docusaurus-search-local'),
+  /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+  // @ts-ignore
+  ({
+    hashed: true,
+    language: ['en', 'zh']
+  }),
+]
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
@@ -63,6 +76,7 @@ const config = {
       }),
     ],
   ],
+  themes: [searchLocalPlugin],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -147,3 +161,5 @@ const config = {
 };
 
 module.exports = config;
+
+
