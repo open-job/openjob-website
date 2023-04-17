@@ -16,7 +16,7 @@
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.About Openjob": {
-    "message": "关于OpenJOB",
+    "message": "关于Openjob",
     "description": "The label for category About Openjob in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.About Openjob.link.generated-index.description": {
