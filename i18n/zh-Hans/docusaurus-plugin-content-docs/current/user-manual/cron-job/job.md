@@ -92,14 +92,30 @@ json/yaml/properties 格式参数，必须在任务里面手动解析，任务�
 
 ![Update](assets/cron/update.png)
 
-
+:::tip
+更新任务表达式类型、执行方式、执行策略以及重试参数时，新产生的调度任务才会生效，更新之前的调度任务还是使用旧的配置信息。
+:::
 ## 执行任务
 
-![Update](assets/cron/execute-once.png)
+![ExecuteOnece](assets/cron/execute-once.png)
+
+手动执行一次任务，一般用于调试任务。手动执行任务，支持如下参数：
+- 任务参数类型
+- 任务参数
+- 扩展参数类型
+- 扩展参数
+
+:::info
+手动执行任务不支持填写其它参数。
+:::
 
 ## 复制任务
 
-![Update](assets/cron/next-time.png)
+![Copy](assets/cron/copy.png)
+
+:::info
+基于现有任务快速创建一个新任务。
+:::
 
 ## 删除任务
 
