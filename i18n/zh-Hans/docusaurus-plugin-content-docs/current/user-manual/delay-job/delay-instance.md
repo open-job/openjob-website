@@ -4,9 +4,13 @@ sidebar_position: 2
 
 # 延时实例
 
+## 实例日志
+
+![Log](assets/instance/log.png)
+
 ## 删除任务
 
-![Delete](assets/delay/delete.png)
+![Delete](assets/instance/delete.png)
 
 - 只支持单个删除延时实例，且删除前二次确认
 
