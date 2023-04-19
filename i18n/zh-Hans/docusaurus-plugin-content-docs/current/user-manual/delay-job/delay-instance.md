@@ -8,6 +8,10 @@ sidebar_position: 2
 
 ![Log](assets/instance/log.png)
 
+:::tip
+运行中的实例任务，日志会实时动态加载。
+:::
+
 ## 删除任务
 
 ![Delete](assets/instance/delete.png)
