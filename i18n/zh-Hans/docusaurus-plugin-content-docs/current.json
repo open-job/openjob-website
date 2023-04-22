@@ -126,5 +126,37 @@
   "sidebar.tutorialSidebar.category.Deploy Guide.link.generated-index.description": {
     "message": "5分钟学习最重要的Docusaurus概念。",
     "description": "The generated-index page description for category Deploy Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Job scheduling": {
+    "message": "任务调度",
+    "description": "The label for category Job scheduling in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Job scheduling.link.generated-index.description": {
+    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "description": "The generated-index page description for category Job scheduling in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cron schedule": {
+    "message": "定时调度",
+    "description": "The label for category Cron schedule in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cron schedule.link.generated-index.description": {
+    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "description": "The generated-index page description for category Cron schedule in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Processor Type": {
+    "message": "执行器类型",
+    "description": "The label for category Processor Type in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Processor Type.link.generated-index.description": {
+    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "description": "The generated-index page description for category Processor Type in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Distributed Model": {
+    "message": "分布式模型",
+    "description": "The label for category Distributed Model in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Distributed Model.link.generated-index.description": {
+    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "description": "The generated-index page description for category Distributed Model in sidebar tutorialSidebar"
   }
 }

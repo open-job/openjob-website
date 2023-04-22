@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# GO
+# Gin
 即将上线，敬请期待！
