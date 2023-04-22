@@ -144,7 +144,7 @@
     "description": "The generated-index page description for category Cron schedule in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Processor Type": {
-    "message": "执行器类型",
+    "message": "执行器",
     "description": "The label for category Processor Type in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Processor Type.link.generated-index.description": {
