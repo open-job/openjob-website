@@ -158,5 +158,13 @@
   "sidebar.tutorialSidebar.category.Distributed Model.link.generated-index.description": {
     "message": "5 minutes to learn the most important Docusaurus concepts.",
     "description": "The generated-index page description for category Distributed Model in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Job Log": {
+    "message": "任务日志",
+    "description": "The label for category Job Log in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Job Log.link.generated-index.description": {
+    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "description": "The generated-index page description for category Job Log in sidebar tutorialSidebar"
   }
 }
