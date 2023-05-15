@@ -20,7 +20,7 @@
     "description": "The label for category About Openjob in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.About Openjob.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "快速了解 Openjob",
     "description": "The generated-index page description for category About Openjob in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Quick Start": {
@@ -28,7 +28,7 @@
     "description": "The label for category Quick Start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Quick Start.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "1分钟体验 Openjob",
     "description": "The generated-index page description for category Quick Start in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Developer Guide": {
@@ -36,7 +36,7 @@
     "description": "The label for category Developer Guide in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Developer Guide.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "学习 Openjob 开发知识",
     "description": "The generated-index page description for category Developer Guide in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Cron Job": {
@@ -52,7 +52,7 @@
     "description": "The label for category Delay Job in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Delay Job.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "延时一定时间执行的任务",
     "description": "The generated-index page description for category Delay Job in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Workflow": {
@@ -60,7 +60,7 @@
     "description": "The label for category Workflow in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Workflow.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "复杂任务执行流设计",
     "description": "The generated-index page description for category Workflow in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.User Manual": {
@@ -68,7 +68,7 @@
     "description": "The label for category User Manual in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.User Manual.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "管理后台使用手册",
     "description": "The generated-index page description for category User Manual in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Cluster": {
@@ -76,7 +76,7 @@
     "description": "The label for category Cluster in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Cluster.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "集群信息",
     "description": "The generated-index page description for category Cluster in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.System": {
@@ -84,7 +84,7 @@
     "description": "The label for category System in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.System.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "系统配置信",
     "description": "The generated-index page description for category System in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Other Language": {
@@ -92,7 +92,7 @@
     "description": "The label for category Other Language in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Other Language.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "其它语言 Golang/PHP/Python 支持",
     "description": "The generated-index page description for category Other Language in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Golang": {
