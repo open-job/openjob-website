@@ -3,18 +3,6 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "教程 - 基础知识",
-    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
-    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
-    "message": "Tutorial - Extras",
-    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.About Openjob": {
     "message": "关于Openjob",
     "description": "The label for category About Openjob in sidebar tutorialSidebar"
@@ -54,14 +42,6 @@
   "sidebar.tutorialSidebar.category.Delay Job.link.generated-index.description": {
     "message": "延时一定时间执行的任务",
     "description": "The generated-index page description for category Delay Job in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Workflow": {
-    "message": "工作流",
-    "description": "The label for category Workflow in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Workflow.link.generated-index.description": {
-    "message": "复杂任务执行流设计",
-    "description": "The generated-index page description for category Workflow in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.User Manual": {
     "message": "用户手册",
