@@ -32,7 +32,7 @@
     "description": "The label for category Cron Job in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Cron Job.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "定时任务",
     "description": "The generated-index page description for category Cron Job in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Delay Job": {
@@ -80,7 +80,7 @@
     "description": "The label for category Golang in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Golang.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "快速学习 Golang 接入",
     "description": "The generated-index page description for category Golang in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.PHP": {
@@ -88,7 +88,7 @@
     "description": "The label for category PHP in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.PHP.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "快速学习 PHP 接入",
     "description": "The generated-index page description for category PHP in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Open API": {
@@ -96,7 +96,7 @@
     "description": "The label for category Open API in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Open API.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "快速熟悉 Open API",
     "description": "The generated-index page description for category Open API in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Deploy Guide": {
@@ -104,7 +104,7 @@
     "description": "The label for category Deploy Guide in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Deploy Guide.link.generated-index.description": {
-    "message": "5分钟学习最重要的Docusaurus概念。",
+    "message": "快速学习如何部署 Openjob",
     "description": "The generated-index page description for category Deploy Guide in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Job scheduling": {
@@ -128,7 +128,7 @@
     "description": "The label for category Processor Type in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Processor Type.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "message": "快速了解不同类型执行器",
     "description": "The generated-index page description for category Processor Type in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Distributed Model": {
@@ -136,7 +136,7 @@
     "description": "The label for category Distributed Model in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Distributed Model.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "message": "快速了解任务分布式模型",
     "description": "The generated-index page description for category Distributed Model in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Job Log": {
@@ -144,7 +144,7 @@
     "description": "The label for category Job Log in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Job Log.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "message": "快速学习日志接入",
     "description": "The generated-index page description for category Job Log in sidebar tutorialSidebar"
   }
 }
