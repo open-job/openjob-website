@@ -81,7 +81,8 @@ docker exec -it containerId /bin/bash
 ```shell
 |-- bin
 |   |-- docker-startup.sh  # Docker 启动脚本
-|   `-- startup.sh # 普通启动脚本
+|   |-- startup.bat  # 普通启动脚本(windows)
+|   `-- startup.sh # 普通启动脚本(Linux)
 |-- conf
 |   |-- application.properties # 配置文件
 |   `-- logback.xml # 日志配置
