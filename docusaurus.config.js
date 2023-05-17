@@ -44,6 +44,10 @@ const config = {
     defaultLocale: 'en',
     locales: ['en', 'zh-Hans'],
     localeConfigs: {
+      'en': {
+        htmlLang: 'en',
+        label: 'English'
+      },
       'zh-Hans': {
         htmlLang: 'zh-Hans',
         label: '简体中文'
