@@ -113,7 +113,7 @@
   },
   "sidebar.tutorialSidebar.category.Job scheduling.link.generated-index.description": {
     "message": "快速学习不同类型的任务调度",
-    "description": "快速学习不同类型的任务调度"
+    "description": "The generated-index page description for category Job scheduling in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Cron schedule": {
     "message": "定时调度",

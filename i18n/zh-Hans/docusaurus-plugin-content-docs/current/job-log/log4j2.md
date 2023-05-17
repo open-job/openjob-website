@@ -6,6 +6,7 @@ sidebar_position: 2
 
 ## 依赖配置
 
+普通 Java 项目
 ```shell
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
@@ -16,6 +17,7 @@ sidebar_position: 2
 ```
 
 
+Spring boot 项目
 ```shell
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
