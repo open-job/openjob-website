@@ -16,11 +16,11 @@ Openjob 将按月发布功能版本、按年度发布大版本。
 ### 新增
 
 ### 修复
-- [[#1](11)] 修复 log4j2 日志 appender
-- [[#1](11)] 修复调度时间未更新问题
+- 修复 log4j2 日志 appender
+- 修复调度时间未更新问题
 
 ### 优化
-[[#1](11)] 优化 openjob-worker-start 自动装配
+优化 openjob-worker-start 自动装配
 
 
 ## V1.0.0
