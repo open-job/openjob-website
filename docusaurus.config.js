@@ -20,7 +20,7 @@ const searchLocalPlugin = [
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Openjob',
-  tagline: 'Distributed task scheduling framework',
+  tagline: 'A distributed person scheduling, high-performance delayed tasks and lightweight computing framework',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

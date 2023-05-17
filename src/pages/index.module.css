@@ -4,10 +4,16 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 10rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: #eee;
+  background-image: url(/img/hero_banner_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 @media screen and (max-width: 996px) {
@@ -19,5 +25,20 @@
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
+}
+
+
+.logoEffect  {
+  animation: jello 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes jello {
+  25% {
+    -webkit-transform: translateY(-8px);
+}
+75%, 100% {
+    -webkit-transform: translateY(0);
+}
 }
