@@ -61,6 +61,10 @@ Spring boot
 </Configuration>
 ```
 
+:::tip
+必须配置 `packages` 定义插件查找包路径。
+:::
+
 ## 日志采集
 
 ```java

@@ -11,16 +11,19 @@ v1.0.1 是 v1.0.0 之后的Bug修复版本 v1.1.0 是 v1.0.0 之后的功能版�
 
 Openjob 将按月发布功能版本、按年度发布大版本。
 
-## V1.1.1
+## V1.0.1
 
-### 新增
+**新增**
+- [[#87](https://github.com/open-job/openjob/pull/87)] 新增一次性任务
+ 
+**修复**
+- [[#87](https://github.com/open-job/openjob/pull/87)] 修复 log4j2 日志 appender
+- [[#87](https://github.com/open-job/openjob/pull/87)] 修复调度时间未更新问题
+- [[#87](https://github.com/open-job/openjob/pull/87)] 修复定时任务初始化执行时间问题
 
-### 修复
-- 修复 log4j2 日志 appender
-- 修复调度时间未更新问题
-
-### 优化
-优化 openjob-worker-start 自动装配
+**优化**
+- [[#87](https://github.com/open-job/openjob/pull/87)] 优化 openjob-worker-start 自动装配
+- [[#87](https://github.com/open-job/openjob/pull/87)] 优化工作节点心跳
 
 
 ## V1.0.0
