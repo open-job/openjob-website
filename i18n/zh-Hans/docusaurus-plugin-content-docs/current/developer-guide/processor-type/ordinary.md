@@ -8,6 +8,23 @@ sidebar_position: 1
 
 ## Java 集成
 
+### Maven
+
+```shell
+<openjob.worker.version>latest</openjob.worker.version>
+<dependency>
+  <groupId>io.openjob.worker</groupId>
+  <artifactId>openjob-worker-core</artifactId>
+  <version>${openjob.worker.version}</version>
+</dependency>
+```
+
+:::tip
+`latest` 替换为对应的版本
+:::
+
+### 示例
+
 ```java
 package io.openjob.samples.java.processor;
 
@@ -42,7 +59,22 @@ Java 普通执行器名称即是完整类名
 
 Spring Boot 集成有两种方式定义执行器，两种定义方式有不同的使用场景。
 
-### @Openjob
+### Maven
+
+```shell
+<openjob.worker.version>latest</openjob.worker.version>
+<dependency>
+    <groupId>io.openjob.worker</groupId>
+    <artifactId>openjob-worker-spring-boot-starter</artifactId>
+    <version>${openjob.worker.version}</version>
+</dependency>
+```
+
+:::tip
+`latest` 替换为对应的版本
+:::
+
+### @Openjob 示例
 
 ```java
 package io.openjob.samples.spring.boot.processor;
@@ -82,7 +114,7 @@ public class StandaloneAnnotationProcessor {
 `@Openjob` 注解方式定义执行器，只支持单机(Standalone)，其它分布式模型不支持。
 :::
 
-### @Component
+### @Component 示例
 
 ```java
 package io.openjob.samples.spring.boot.processor;

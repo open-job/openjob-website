@@ -161,7 +161,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['java', 'php', 'go'],
+        additionalLanguages: ['java', 'php', 'go', 'properties'],
       },
     }),
 };

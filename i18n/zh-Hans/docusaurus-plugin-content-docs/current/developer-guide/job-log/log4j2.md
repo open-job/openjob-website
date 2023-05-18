@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## 接入配置
 
-普通 Java
+Java
 
 ```shell
 <openjob.worker.version>latest</openjob.worker.version>
