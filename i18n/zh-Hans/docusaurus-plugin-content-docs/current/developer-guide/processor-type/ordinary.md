@@ -23,6 +23,10 @@ sidebar_position: 1
 `latest` 替换为对应的版本
 :::
 
+### 配置
+
+请参见[配置参考](/docs/developer-guide/config-reference/java)
+
 ### 示例
 
 ```java
@@ -73,6 +77,10 @@ Spring Boot 集成有两种方式定义执行器，两种定义方式有不同�
 :::tip
 `latest` 替换为对应的版本
 :::
+
+### 配置
+
+请参见[配置参考](/docs/developer-guide/config-reference/spring-boot)
 
 ### @Openjob 示例
 

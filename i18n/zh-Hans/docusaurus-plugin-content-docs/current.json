@@ -146,5 +146,13 @@
   "sidebar.tutorialSidebar.category.Job Log.link.generated-index.description": {
     "message": "快速学习日志接入",
     "description": "The generated-index page description for category Job Log in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.config-reference": {
+    "message": "配置参考",
+    "description": "The label for category config-reference in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.config-reference.link.generated-index.description": {
+    "message": "配置参考手册",
+    "description": "The generated-index page description for category config-reference in sidebar tutorialSidebar"
   }
 }
