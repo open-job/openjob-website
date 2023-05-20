@@ -2,46 +2,33 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
+Openjob is a distributed, high-performance task scheduling framework that supports various types of scheduled tasks, delayed tasks, and workflow design. It adopts a decentralized architecture and implements a consistency sharding algorithm at the bottom level, supporting unlimited expansion.
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Features
+### High reliability
+It adopts a distributed, stateless design, the Master/Worker architecture, and relies only on one database (MySQL/PostgreSQL/Oracle).
 
-## Getting Started
+### High performance
+It supports precise task scheduling up to second-level granularity, lightweight distributed computing, and uses a consistency sharding algorithm at the bottom level. It supports unlimited expansion.
 
-Get started by **creating a new site**.
+### Scheduled scheduling
+It supports various types of scheduled tasks, including distributed scheduled tasks, fixed-frequency tasks, high-performance second-level tasks, one-time tasks, and more.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### Distributed computing
+It supports various distributed programming models, such as single machine, broadcast, Map, MapReduce, sharding, and easily implements large-scale distributed computing.
 
-### What you'll need
+### Workflow
+It has a built-in workflow scheduling engine, supporting a visual DAG design, and efficiently implementing complex task scheduling.
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### Delayed tasks
+It implements high-performance delayed tasks based on Redis. The bottom-level task adopts a multi-level storage method and provides rich task management.
 
-## Generate a new site
+### Cross-language
+It supports client SDKs for multiple programming languages, such as Java/Go/PHP/Python, and can be used in common frameworks like Spring Boot, Gin, Swoft, and more.
 
-Generate a new Docusaurus site using the **classic template**.
+### Permission management
+It features a very convenient namespace design and adopts rich button-level permission management.
 
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### Alarm monitoring
+It has comprehensive monitoring metrics and rich and timely alarm methods, which can help operations and maintenance personnel quickly locate and solve online problems.
