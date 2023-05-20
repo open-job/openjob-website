@@ -108,8 +108,9 @@ const config = {
           },
           {
             href: 'https://github.com/open-job/openjob',
-            label: 'GitHub',
+            className: 'header-github-link',
             position: 'right',
+            'aria-label': 'GitHub repository',
           }
         ],
       },
