@@ -12,30 +12,40 @@ for example v1.0.1 is the bug fix version after v1.0.0, and v1.1.0 is the functi
 Openjob will release functional versions monthly and major versions annually.
 
 ## V1.0.1
-**New features**
-- [#87] Added one-time task.
+May 19, 2023
 
-**Bug fixes**
-- [#87] Fixed log4j2 log appender.
-- [#87] Fixed scheduling time not updated issue.
-- [#87] Fixed initialization execution time issue for scheduled tasks.
+**Feature**
 
-**Optimizations**
-- [#87] Optimized openjob-worker-start automatic configuration
-- [#87] Optimized work node heartbeat
+- [[#87](https://github.com/open-job/openjob/pull/87)] Add one-time job
+- [[#88](https://github.com/open-job/openjob/pull/88)] Job add or modify to recalculate execution time
+- [[#88](https://github.com/open-job/openjob/pull/88)] Add validation for namepace, application, job, and delay
+
+**Bugfix**
+
+- [[#87](https://github.com/open-job/openjob/pull/87)] Log4j2 log appender
+- [[#87](https://github.com/open-job/openjob/pull/87)] Execute time not updated
+- [[#88](https://github.com/open-job/openjob/pull/88)] Delayed task total count
+- [[#88](https://github.com/open-job/openjob/pull/88)] Delayed task status by terminated
+- [[#88](https://github.com/open-job/openjob/pull/88)] Cluster node startup not to initialize application worker list
+
+**Optimize**
+
+- [[#87](https://github.com/open-job/openjob/pull/87)] Autowire for `openjob-worker-spring-boot-starter`
+- [[#87](https://github.com/open-job/openjob/pull/87)] Worker node heartbeat
+- [[#88](https://github.com/open-job/openjob/pull/88)] Client async to initialize and add retry
+- [[#88](https://github.com/open-job/openjob/pull/88)] Client support server hostname
 
 
 ## V1.0.0
+
 May 13, 2023
+
 :::info
-Feature list
+Features
 :::
-- Java access
-- Spring Boot access
-- Management backend
-  - Namespace management
-  - Application management
-  - Scheduled tasks
-  - Delayed tasks
-  - Cluster management
-  - System management
+- High reliability
+- High performance
+- Scheduled tasks
+- Distributed computing
+- Workflow
+- Delayed tasks

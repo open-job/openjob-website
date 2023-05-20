@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # 简介
-Openjob 是一款分布式高性能任务调度框架，支持多种定时任务、延时任务、工作流设计，采用无中心化架构，底层使用一致性分片算法，支持无线扩容。
+Openjob 是一款分布式高性能任务调度框架，支持多种定时任务、延时任务、工作流设计，采用无中心化架构，底层使用一致性分片算法，支持无限扩容。
 ## 特性
 ### 高可靠
 分布式无状态设计，采用 Master/Worker 架构，只依赖一种数据库(MySQL/PostgreSQL/Oracle)
@@ -23,3 +23,20 @@ Openjob 是一款分布式高性能任务调度框架，支持多种定时任务
 命名空间设计，丰富的按钮级别权限管理，。
 ### 报警监控
 全面的监控指标，丰富及时的报警方式，便于运维人员快速定位和解决线上问题。
+
+## 文档
+
+- [官方网站](https://openjob.io)
+- [官方文档](https://openjob.io/zh-Hans/docs/intro/)
+- [在线体验](https://demo.openjob.io)
+  - 用户名: openjob
+  - 密 码: openjob.io
+
+## 联系我们
+
+- WeChat:
+- WeAccount:
+- Mail list:
+ - swoft@qq.com
+
+

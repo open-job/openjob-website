@@ -6,7 +6,11 @@ sidebar_position: 2
 
 ## 接入配置
 
-Java
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="java" label="Java" default>
 
 ```shell
 <openjob.worker.version>latest</openjob.worker.version>
@@ -16,8 +20,8 @@ Java
   <version>${openjob.worker.version}</version>
 </dependency>
 ```
-
-Spring boot
+  </TabItem>
+  <TabItem value="spring-boot" label="Spring Boot">
 
 ```shell
 <openjob.worker.version>latest</openjob.worker.version>
@@ -27,6 +31,8 @@ Spring boot
     <version>${openjob.worker.version}</version>
 </dependency>
 ```
+  </TabItem>
+</Tabs>
 
 :::tip
 `latest` 替换为对应的版本

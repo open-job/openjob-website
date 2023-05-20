@@ -32,3 +32,20 @@ It features a very convenient namespace design and adopts rich button-level perm
 
 ### Alarm monitoring
 It has comprehensive monitoring metrics and rich and timely alarm methods, which can help operations and maintenance personnel quickly locate and solve online problems.
+
+## Documentation
+
+- [Official website](https://openjob.io)
+- [Official documentation](https://openjob.io/docs/intro/)
+- [Live demo ](https://demo.openjob.io)
+    - username: openjob
+    - password: openjob.io
+
+## Contact
+
+- Gitter: https://gitter.im/openjob/openjob
+- Discord: https://discord.gg/ZUmX57fKa5
+- WeChat:
+- WeAccount:
+- Mail list:
+  - swoft@qq.com
