@@ -13,6 +13,8 @@ Openjob 将按月发布功能版本、按年度发布大版本。
 
 ## V1.0.1
 
+2023年5月19日
+
 **新增**
 - [[#87](https://github.com/open-job/openjob/pull/87)] 新增一次性任务
 - [[#88](https://github.com/open-job/openjob/pull/88)] 定时任务新增、修改重新计算执行时间
@@ -34,7 +36,9 @@ Openjob 将按月发布功能版本、按年度发布大版本。
 
 
 ## V1.0.0
+
 2023年5月13日
+
 :::info
 **功能列表**
 :::
