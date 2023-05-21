@@ -33,13 +33,16 @@ sidebar_position: 1
 | OJ_REDIS_PASSWORD | - | Redis 密码，默认空 |
 | OJ_REDIS_DB  | 0 | Redis db |
 | SPRING_JPA_SHOW_SQL  | false | SQL 打印状态，默认关闭 |
+| AKKA_REMOTE_HOSTNAME  | openjob-server | 服务远程连接地址，客户端连接使用支持域名和IP |
+| AKKA_REMOTE_PORT  | 25520 | 远程连接端口 |
 
 :::tip
 1. 容器启动参数是通过环境变量方式配置
 2. 数据库驱动暂时只支持 Mysql，后续会支持 PostgreSQL/Oracle
 3. 日志存储暂时支持H2/MYSQL，后续会支持 elasticsearch/tidb/MongoDB
 4. 延时任务是可选项，但是开启延时任务时，必须配置 Redis 否则无法使用。
-5. 还有部分其它参数未通过环境变量方式，如有场景需要修改，可以通过文件挂载方式实现。
+5. `AKKA_REMOTE_HOSTNAME` 建议根据场景配置(一般配置负载域名或IP)，否则会导致网络不通。
+6. 还有部分其它参数未通过环境变量方式，如有场景需要修改，可以通过文件挂载方式实现。
 :::
 
 ## 配置文件
@@ -89,8 +92,10 @@ spring.redis.lettuce.pool.max-idle=8
 spring.redis.lettuce.pool.max-wait=1000
 spring.redis.lettuce.pool.time-between-eviction-runs=60s
 spring.jpa.show-sql=${SPRING_JPA_SHOW_SQL:false}
+akka.remote.hostname=${AKKA_REMOTE_HOSTNAME:openjob-server}
+akka.remote.port=${AKKA_REMOTE_PORT:25520}
 ```
 
 :::tip
-配置参数与环境变量完全一致
+配置参数含义与环境变量完全一致
 :::

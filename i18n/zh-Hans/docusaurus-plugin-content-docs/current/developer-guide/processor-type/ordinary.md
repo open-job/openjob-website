@@ -4,13 +4,13 @@ sidebar_position: 1
 
 # 普通执行器
 
-普通执行器是任务执行的载体，通过代码集成实现任务功能，不同语言略有差异。
+普通执行器是任务执行的载体，不同语言集成方式略有差异。
 
 ## Java 集成
 
 ### Maven
 
-```shell
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
   <groupId>io.openjob.worker</groupId>
@@ -65,7 +65,7 @@ Spring Boot 集成有两种方式定义执行器，两种定义方式有不同�
 
 ### Maven
 
-```shell
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
     <groupId>io.openjob.worker</groupId>
@@ -119,7 +119,7 @@ public class StandaloneAnnotationProcessor {
 `@Openjob` 方式是一种简化方式定义执行器，通过注解定义执行器名称，如上定义了一个名称为 `annotationProcessor` 执行器。
 
 :::caution
-`@Openjob` 注解方式定义执行器，只支持单机(Standalone)，其它分布式模型不支持。
+`@Openjob` 注解方式定义执行器，只支持单机模型(Standalone)，其它分布式模型不支持。
 :::
 
 ### @Component 示例
@@ -150,7 +150,7 @@ public class StandaloneProcessor implements JavaProcessor {
 }
 ```
 
-执行器名称即为 bean 名称 `io.openjob.samples.java.processor.JavaProcessorSample`
+执行器名称即为 `bean` 名称 `io.openjob.samples.java.processor.JavaProcessorSample`，也支持 `@Component("xxx")` 方式自定义执行器名称
 
 :::tip
 此方式必须实现对应的接口，不同的分布式模型有不同的实现。

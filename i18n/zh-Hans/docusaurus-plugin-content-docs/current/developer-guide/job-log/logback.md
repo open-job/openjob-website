@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="java" label="Java" default>
 
-```shell
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
   <groupId>io.openjob.worker</groupId>
@@ -23,7 +23,7 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="spring-boot" label="Spring Boot">
 
-```shell
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
     <groupId>io.openjob.worker</groupId>
