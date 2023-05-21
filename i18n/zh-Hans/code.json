@@ -305,67 +305,67 @@
     "message": "没有找到任何文档",
     "description": "The paragraph for empty search result"
   },
-  "Start": {
-    "message": "开始"
+  "Quick Start": {
+    "message": "快速开始"
   },
-  "Experience": {
-    "message": "体验"
+  "Live demo": {
+    "message": "在线体验"
   },
-  "High Available": {
-    "message": "高可用性"
+  "High reliability": {
+    "message": "高可靠"
   },
-  "Distributed stateless design, master/worker architecture, only depends on one kind of database.(MySQL/PostgreSQL/Oracle)": {
-    "message": "分布式无状态设计，主/从体系结构，只依赖于一种数据库。(MySQL/PostgreSQL/Oracle)"
+  "Distributed with stateless design by Master/Worker architecture, only on one type of database (MySQL/PostgreSQL/Oracle)": {
+    "message": "分布式无状态设计，采用 Master/Worker 架构，只依赖一种数据库(MySQL/PostgreSQL/Oracle)"
   },
-  "high performance": {
+  "High performance": {
     "message": "高性能"
   },
-  "Task scheduling is accurate to the second level, and supports lightweight distributed computing. Tasks use fragmentation algorithms to support unlimited expansion.": {
-    "message": "任务调度精确到秒，支持轻量级分布式计算。任务使用分片算法来支持无限扩展。"
+  "Task scheduling to the second level, lightweight distributed computing, sharding algorithm and unlimited scaling": {
+    "message": "任务调度精确到秒级别，支持轻量级分布式计算，底层使用一致性分片算法，支持无限扩容。"
   },
   "Timing scheduling": {
     "message": "定时调度"
   },
   "Support distributed timing tasks, fixed-frequency tasks, high-performance second-level tasks, and timing scheduling of one-time tasks": {
-    "message": "支持分布式定时任务、定频任务、高性能秒级任务、一次性任务的定时调度"
+    "message": "支持分布式定时任务、固定频率任务、高性能秒级任务、一次性任务定时调度。"
   },
   "Distributed computing": {
     "message": "分布式计算"
   },
   "Support stand-alone, broadcast, Map, MapReduce and shard a variety of distributed programming models, easy to achieve big data distributed computing.": {
-    "message": "支持单机、广播、Map、MapReduce和Shard多种分布式编程模型，轻松实现大数据分布式计算。"
+    "message": "支持单机、广播、Map、MapReduce 和分片多种分布式编程模型，轻松实现大数据分布式计算。"
   },
   "Delayed task": {
     "message": "延迟任务"
   },
   "Implement high performance delayed tasks based on Redis, support multi-level storage of delayed tasks and rich task management.": {
-    "message": "基于Redis实现高性能延迟任务，支持延迟任务的多级存储和丰富的任务管理。"
+    "message": "基于 Redis 高性能延时任务，底层任务多级存储，提供丰富的任务管理。"
   },
   "Work flow": {
     "message": "工作流程"
   },
   "Built-in workflow scheduling engine to support visual DAG,It is convenient and efficient to realize complex task scheduling.": {
-    "message": "内置工作流调度引擎，支持可视化DAG，方便高效地实现复杂任务调度。"
+    "message": "内置工作流调度引擎，支持可视化 DAG 设计，简单高效实现复杂任务调度。"
   },
   "Authority management": {
     "message": "权限管理"
   },
   "Namespace design, supports rich rights management, accurate to the button level": {
-    "message": "命名空间设计，支持丰富的权限管理，精确到按钮级"
+    "message": "命名空间设计，丰富的按钮级别权限管理。"
   },
   "Alarm monitoring": {
     "message": "告警监控"
   },
   "Comprehensive monitoring indicators, rich and timely alarm methods, easy for operators to quickly locate and solve online problems.": {
-    "message": "全面的监测指标，丰富及时的报警方式，方便操作员快速定位和解决在线问题。"
+    "message": "全面的监控指标，丰富及时的报警方式，便于运维人员快速定位和解决线上问题。"
   },
   "Cross-language": {
     "message": "跨语言"
   },
   "Officials provide Java/Go/PHP redundant support, as well as Spring Boot、 Gin、 Swoft and other common framework integration.": {
-    "message": "官方提供JAVA/GO/PHP支持，以及Spring Boot、Gin、SWOFT等常见框架的集成。"
+    "message": "支持 Java/Go/PHP/Python 多语言 ，以及Spring Boot、Gin、Swoft 常见框架集成。"
   },
-  "A distributed Task scheduling, High performance delayed tasks and lightweight Computing Framework": {
-    "message": "一种分布式任务调度、高性能延迟任务和轻量级计算框架"
+  "A distributed high-performance task scheduling framework, multiple crontab, delayed task, workflow, and unlimited scaling": {
+    "message": "一款分布式高性能任务调度框架，支持多种定时任务、延时任务、工作流设计、无限扩容"
   }
 }

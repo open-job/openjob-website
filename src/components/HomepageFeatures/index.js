@@ -5,20 +5,20 @@ import Translate from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: <Translate>High Available</Translate>,
+    title: <Translate>High reliability</Translate>,
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <Translate>
-        Distributed stateless design, master/worker architecture, only depends on one kind of database.(MySQL/PostgreSQL/Oracle)
+        Distributed with stateless design by Master/Worker architecture, only on one type of database (MySQL/PostgreSQL/Oracle)
       </Translate>
     ),
   },
   {
-    title: <Translate>high performance</Translate>,
+    title: <Translate>High performance</Translate>,
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <Translate>
-        Task scheduling is accurate to the second level, and supports lightweight distributed computing. Tasks use fragmentation algorithms to support unlimited expansion.
+        Task scheduling to the second level, lightweight distributed computing, sharding algorithm and unlimited scaling
       </Translate>
 
     ),

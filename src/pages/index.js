@@ -18,19 +18,19 @@ function HomepageHeader() {
         </div>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">
-          <Translate>A distributed Task scheduling, High performance delayed tasks and lightweight Computing Framework</Translate>
+          <Translate>A distributed high-performance task scheduling framework, multiple crontab, delayed task, workflow, and unlimited scaling</Translate>
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg margin-right--lg"
             to="/docs/intro">
-            <Translate>Start</Translate>
+            <Translate>Quick Start</Translate>
           </Link>
 
           <Link
             className="button button--outline button--primary button--lg m-2"
             to="https://demo.openjob.io">
-            <Translate>Experience</Translate>
+            <Translate>Live demo</Translate>
           </Link>
         </div>
       </div>
