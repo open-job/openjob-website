@@ -34,9 +34,9 @@ Openjob 是一款分布式高性能任务调度框架，支持多种定时任务
 
 ## 联系我们
 
-- WeChat:
-- WeAccount:
-- Mail list:
- - swoft@qq.com
+- 微信助手:
+- 微信公众号:
+- 联系邮箱:
+  - swoft@qq.com
 
 

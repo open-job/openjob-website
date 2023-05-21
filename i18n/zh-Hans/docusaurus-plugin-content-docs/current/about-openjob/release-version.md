@@ -27,6 +27,7 @@ Openjob 将按月发布功能版本、按年度发布大版本。
 - [[#88](https://github.com/open-job/openjob/pull/88)] 修复延时任务总数计算错误
 - [[#88](https://github.com/open-job/openjob/pull/88)] 修复终止延时任务状态错误
 - [[#88](https://github.com/open-job/openjob/pull/88)] 修复集群节点启动未初始化工作节点列表
+- [[#90](https://github.com/open-job/openjob/pull/90)] 修复域名访问 server 集群
 
 **优化**
 - [[#87](https://github.com/open-job/openjob/pull/87)] 优化 openjob-worker-start 自动装配

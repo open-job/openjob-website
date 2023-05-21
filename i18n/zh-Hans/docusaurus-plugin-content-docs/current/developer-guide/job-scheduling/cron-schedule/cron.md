@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Cron
 
-cron 定时任务类似 Linux 系统 crontab 任务，crontab 只是单机节点不能分布式调度，且管理运维比较麻烦。
+cron 定时任务类似 Linux 系统 crontab 任务，crontab 仅仅支持单机节点，不支持分布式调度，并且管理运维比较繁琐。
 
 ## 表达式
 

@@ -29,7 +29,7 @@ function HomepageHeader() {
 
           <Link
             className="button button--outline button--primary button--lg m-2"
-            to="/docs/intro">
+            to="https://demo.openjob.io">
             <Translate>Experience</Translate>
           </Link>
         </div>
@@ -42,7 +42,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title} Official Website`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>

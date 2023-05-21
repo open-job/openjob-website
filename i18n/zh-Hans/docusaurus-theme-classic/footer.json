@@ -36,7 +36,7 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/open-job/openjob"
   },
   "copyright": {
-    "message": "Copyright © 2023 My Project, Inc. Built with Docusaurus.",
+    "message": "Copyright © 2023 My Project, Inc. Built with Openjob.",
     "description": "The footer copyright"
   }
 }
