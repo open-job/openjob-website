@@ -17,14 +17,14 @@ docker pull openjob/openjob-server:latest
 新增一个配置文件 `.env`，配置正确可用的数据库地址。更多配置参数，请参见[配置参考](/docs/developer-guide/config-reference/server)
 
 ```shell
-AKKA_REMOTE_PORT=LocalIP
+AKKA_REMOTE_HOSTNAME=LocalIP
 OJ_DS_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
 OJ_LOG_STORAGE_MYSQL_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
 ```
 
 :::tip
 1. 数据库必须手动创建
-2. AKKA_REMOTE_PORT` 必须配置当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通。 
+2. AKKA_REMOTE_HOSTNAME` 必须配置当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通。 
 3. 容器运行涉及多项参数配置，使用配置文件更方便，其次也可以启动时通过命令传递参数(环境变量)。
 :::
 
@@ -51,7 +51,7 @@ services:
     restart: always
     container_name: openjob-server
     environment:
-      - AKKA_REMOTE_PORT=LocalIP
+      - AKKA_REMOTE_HOSTNAME=LocalIP
       - OJ_DS_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
       - OJ_LOG_STORAGE_MYSQL_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     ports:
@@ -60,7 +60,7 @@ services:
 ```
 :::tip
 1. 数据库必须手动创建
-2. AKKA_REMOTE_PORT` 必须配置当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通。
+2. AKKA_REMOTE_HOSTNAME` 必须配置当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通。
 :::
 
 
