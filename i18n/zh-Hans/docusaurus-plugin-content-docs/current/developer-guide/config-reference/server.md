@@ -12,7 +12,7 @@ sidebar_position: 1
 |:----------|---------------------------------------------------------------------------------------------------------:|:--:|
 | OJ_ADMIN_USER_PWD_SALT | ... | 加密盐 |
 | OJ_DS_DRIVER_CLASS | `com.mysql.cj.jdbc.Driver`| 数据库驱动，默认MYSQL |
-| OJ_DS_URL | `jdbc:mysql://127.0.0.1:3306/openjob?...` | 数据库 URL 地址 |
+| OJ_DS_URL | `jdbc:mysql:....` | 数据库 URL 地址 |
 | OJ_DS_USERNAME | root | 数据库账号 |
 | OJ_DS_PASSWORD | 123456 | 数据库密码 |
 | OJ_DS_HK_MINI_IDLE | 1 | 连接池最小空闲数 |
@@ -24,14 +24,19 @@ sidebar_position: 1
 | OJ_LOG_STORAGE_SELECTOR | mysql | 日志存储类型，默认 MYSQL |
 | OJ_LOG_STORAGE_H2_USER | root| H2 日志存储，数据库账号  |
 | OJ_LOG_STORAGE_H2_PASSWORD | 123456 | H2 日志存储，数据库密码 |
-| OJ_LOG_STORAGE_H2_URL | `jdbc:h2:mem:openjob;AUTO_RECONNECT=TRUE...`| H2 日志存储，数据库 URL |
+| OJ_LOG_STORAGE_H2_URL | `jdbc:h2:...`| H2 日志存储，数据库 URL |
 | OJ_LOG_STORAGE_MYSQL_USER | root| Mysql 日志存储，数据库账号 |
 | OJ_LOG_STORAGE_MYSQL_PASSWORD | 123456 | Mysql 日志存储，数据库密码 |
-| OJ_LOG_STORAGE_MYSQL_URL | jdbc:mysql://127.0.0.1:3306/openjob?... | Mysql 日志存储，数据库 URL |
+| OJ_LOG_STORAGE_MYSQL_URL | jdbc:mysql:... | Mysql 日志存储，数据库 URL |
+| OJ_LOG_STORAGE_ES7_USERNAME | - | Elasticsearch 账号 |
+| OJ_LOG_STORAGE_ES7_PASSWORD | - | Elasticsearch 密码 |
+| OJ_LOG_STORAGE_ES7_CLUSTER_NODES | `127.0.0.1：9200` | Elasticsearch 集群地址，多个逗号隔离 |
+| OJ_LOG_STORAGE_ES7_SOCKET_TIMEOUT | 3000 | Elasticsearch 超时时间，单位毫秒|
 | OJ_SCHEDULER_DELAY_ENABLE | false | 延时任务，开启状态，默认 false |
 | OJ_REDIS_HOST | `127.0.0.1` | Redis 地址 |
 | OJ_REDIS_PASSWORD | - | Redis 密码，默认空 |
 | OJ_REDIS_DB  | 0 | Redis db |
+| OJ_REDIS_PORT | 6379 | Redis 端口号 |
 | SPRING_JPA_SHOW_SQL  | false | SQL 打印状态，默认关闭 |
 | AKKA_REMOTE_HOSTNAME  | openjob-server | 服务远程连接地址，客户端连接使用支持域名和IP |
 | AKKA_REMOTE_PORT  | 25520 | 远程连接端口 |
@@ -53,7 +58,7 @@ sidebar_position: 1
 server.port=${SERVER_PORT:8080}
 ### admin config
 # user passwd hash salt
-openjob.admin.user.passwd-salt=${OJ_ADMIN_USER_PWD_SALT:...}
+openjob.admin.user.passwd-salt=${OJ_ADMIN_USER_PWD_SALT:3TJPjpUanNqZ0N1}
 ### spring config
 spring.jackson.serialization.FAIL_ON_EMPTY_BEANS=false
 spring.datasource.driver-class-name=${OJ_DS_DRIVER_CLASS:com.mysql.cj.jdbc.Driver}
@@ -82,10 +87,16 @@ openjob.log.storage.h2.properties.url=${OJ_LOG_STORAGE_H2_URL:jdbc:h2:mem:openjo
 openjob.log.storage.mysql.properties.user=${OJ_LOG_STORAGE_MYSQL_USER:root}
 openjob.log.storage.mysql.properties.password=${OJ_LOG_STORAGE_MYSQL_PASSWORD:123456}
 openjob.log.storage.mysql.properties.url=${OJ_LOG_STORAGE_MYSQL_URL:jdbc:mysql://127.0.0.1:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai}
+openjob.log.storage.elasticsearch7.username=${OJ_LOG_STORAGE_ES7_USERNAME:}
+openjob.log.storage.elasticsearch7.password=${OJ_LOG_STORAGE_ES7_PASSWORD:}
+openjob.log.storage.elasticsearch7.cluster-nodes=${OJ_LOG_STORAGE_ES7_CLUSTER_NODES:localhost:9200}
+openjob.log.storage.elasticsearch7.socket-timeout=${OJ_LOG_STORAGE_ES7_SOCKET_TIMEOUT:3000}
 openjob.scheduler.delay.enable=${OJ_SCHEDULER_DELAY_ENABLE:false}
+#spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
 spring.redis.host=${OJ_REDIS_HOST:127.0.0.1}
 spring.redis.password=${OJ_REDIS_PASSWORD:}
 spring.redis.database=${OJ_REDIS_DB:0}
+spring.redis.port=${OJ_REDIS_PORT:6379}
 spring.redis.client-type=lettuce
 spring.redis.lettuce.pool.max-active=32
 spring.redis.lettuce.pool.max-idle=8

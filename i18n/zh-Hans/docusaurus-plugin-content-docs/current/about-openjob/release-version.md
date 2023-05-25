@@ -11,6 +11,18 @@ v1.0.1 是 v1.0.0 之后的Bug修复版本 v1.1.0 是 v1.0.0 之后的功能版�
 
 Openjob 将按月发布功能版本、按年度发布大版本。
 
+## V1.0.2
+
+**新增**
+- [[#95](https://github.com/open-job/openjob/pull/95)] 新增 Elasticsearch7 日志存储
+
+**修复**
+- [[#95](https://github.com/open-job/openjob/pull/95)] 修复管理后台接口请求域名
+
+**优化**
+
+
+
 ## V1.0.1
 
 2023年5月19日
