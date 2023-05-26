@@ -18,6 +18,7 @@ Openjob 将按月发布功能版本、按年度发布大版本。
 
 **修复**
 - [[#95](https://github.com/open-job/openjob/pull/95)] 修复管理后台接口请求域名
+- [[#96](https://github.com/open-job/openjob/pull/96)] 修复分片算法
 
 **优化**
 
