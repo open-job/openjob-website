@@ -21,8 +21,7 @@ Openjob 将按月发布功能版本、按年度发布大版本。
 - [[#96](https://github.com/open-job/openjob/pull/96)] 修复分片算法
 
 **优化**
-
-
+- [[#97](https://github.com/open-job/openjob/pull/97)] Bean Mapper
 
 ## V1.0.1
 
