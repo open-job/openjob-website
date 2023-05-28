@@ -15,13 +15,17 @@ Openjob 将按月发布功能版本、按年度发布大版本。
 
 **新增**
 - [[#95](https://github.com/open-job/openjob/pull/95)] 新增 Elasticsearch7 日志存储
+- [[#98](https://github.com/open-job/openjob/pull/98)] 首页新增任务和系统数据
 
 **修复**
 - [[#95](https://github.com/open-job/openjob/pull/95)] 修复管理后台接口请求域名
 - [[#96](https://github.com/open-job/openjob/pull/96)] 修复分片算法
+- [[#98](https://github.com/open-job/openjob/pull/98)] 修复延时任务缓存
+- [[#98](https://github.com/open-job/openjob/pull/98)] 修复延时任务执行时间问题
 
 **优化**
 - [[#97](https://github.com/open-job/openjob/pull/97)] Bean Mapper
+- [[#98](https://github.com/open-job/openjob/pull/98)] 优化应用注册
 
 ## V1.0.1
 
