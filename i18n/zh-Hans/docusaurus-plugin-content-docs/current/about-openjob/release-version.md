@@ -23,6 +23,7 @@ Openjob 将按月发布功能版本、按年度发布大版本。
 - [[#96](https://github.com/open-job/openjob/pull/96)] 修复分片算法
 - [[#99](https://github.com/open-job/openjob/pull/99)] 修复延时任务缓存
 - [[#99](https://github.com/open-job/openjob/pull/99)] 修复延时任务执行时间问题
+- [[#101](https://github.com/open-job/openjob/pull/101)] 修复同一个机器多个客户端 Akka 持久化冲突问题
 
 **优化**
 - [[#97](https://github.com/open-job/openjob/pull/97)] Bean Mapper
