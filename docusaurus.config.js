@@ -59,7 +59,6 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
@@ -67,6 +66,9 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/open-job/openjob-website/edit/main/',
+          remarkPlugins: [
+            [require('remark-kroki-plugin'), { krokiBase: 'https://kroki.io', lang: "kroki", imgRefDir: "../img/kroki", imgDir: "static/img/kroki" }]
+          ],
         },
         blog: {
           showReadingTime: true,
@@ -74,6 +76,9 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/open-job/openjob-website/edit/main/',
+          remarkPlugins: [
+            [require('remark-kroki-plugin'), { krokiBase: 'https://kroki.io', lang: "kroki", imgRefDir: "../img/kroki", imgDir: "static/img/kroki" }]
+          ],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
