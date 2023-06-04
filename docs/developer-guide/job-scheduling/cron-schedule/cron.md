@@ -4,13 +4,15 @@ sidebar_position: 1
 
 # Cron
 
-Cron scheduled tasks are similar to the crontab tasks that come with Linux systems. However, crontab can only be scheduled on a single machine and cannot be distributed, management and operations more difficult.
+Cron scheduled tasks are similar to the crontab tasks with Linux systems. However, crontab is not support distributed scheduling.
 
 ## Expression
 
 There is a slight difference between Cron scheduled tasks and crontab time expressions. The smallest granularity of crontab is minute, while the smallest granularity of Cron scheduled tasks is second. Cron time expressions are by default identical to Java (Quartz).
 
-The format of Cron time expressions is as follows:
+Cron expressions are slight different from crontab.Crontab unit is minute,but cron expression unit is second, and it is exactly the same as Java(Quartz).
+
+Cron expressions as follows:
 ```
 Explanation:
 Java(Quartz)
@@ -38,5 +40,5 @@ Examples:
 ```
 
 :::danger
-For Cron scheduled tasks with an interval less than 60 seconds, please use second-level tasks; otherwise, there will be serious performance issues.
+Cron expressions must less than 60 seconds(Recommend second delay), otherwise it case performance problem.
 :::

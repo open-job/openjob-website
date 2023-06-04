@@ -4,15 +4,72 @@ sidebar_position: 2
 
 # FAQ
 
-## How to use Openjob in other programming languages?
-- If you want to use `Openjob` in Java or its derivative frameworks, it has native support, and you can install it directly.
-- If you want to use `Openjob` in Go, you can use the go mod method provided by Go to install the Openjob go agent client dependency provided by Openjob. For details, please refer to [the multi-language client documentation](/docs/category/other-language/).
-- If you want to use `Openjob` in PHP, you can use the Golang agent component provided by Openjob, and then execute the PHP tasks through `shell` methods. For Swoole and its derivative frameworks, `Openjob` also supports installing the agent component with `Composer`. Please refer to [the multi-language client documentation](/docs/category/other-language/) for details.
-- If you want to use `Openjob` in Python, you can use the Golang agent component provided by Openjob, and then execute the Python tasks through `shell` methods.
+## How to support other languages?
+- Java and its frameworks, with native support.
+- Golang support use `go mod` install，see [Go](/docs/other-language/golang/go)。
+- PHP support use Golang agent to execute task by shell mode 。Swoole frameworks support composer install，see [PHP](/docs/other-language/php/)。
+- Python support use Golang agent to execute task by shell mode。
 
 :::caution
-Warning For languages other than Java, scheduled tasks only support single-machine mode, but delayed tasks
-are supported for all languages.
+Other languages only supported cronjob(standalone mode), but delay job supported all languages.
 :::
 
-## h2 Driver Issue
+## H2 driver conflict
+
+Error message:
+```shell
+Caused by: java.lang.RuntimeException: Failed to load driver class org.h2.Driver in either of HikariConfig class loader or Thread context classloader
+	at com.zaxxer.hikari.HikariConfig.setDriverClassName(HikariConfig.java:491)
+	at io.openjob.worker.persistence.H2ConnectionPool.<init>(H2ConnectionPool.java:28)
+	at io.openjob.worker.persistence.H2DelayMemoryPersistence.<init>(H2DelayMemoryPersistence.java:30)
+	at io.openjob.worker.dao.DelayDAO.<init>(DelayDAO.java:24)
+	at io.openjob.worker.dao.DelayDAO.<clinit>(DelayDAO.java:19)
+```
+or
+```shell
+java.lang.NoClassDefFoundError: Could not initialize class io.openjob.worker.dao.DelayDAO
+	at io.openjob.worker.delay.DelayTaskMasterExecutor.start(DelayTaskMasterExecutor.java:62)
+	at io.openjob.worker.delay.DelayTaskMasterExecutor.run(DelayTaskMasterExecutor.java:47)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+```
+One of above error occurs on the worker client, to check whether dependent on H2 database driver. If H2 database driver exists, there are two solutions:
+1. Remove H2 database driver
+2. Remove scope(`<scope>test</scope>`)
+
+Like this:
+```xml
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+</dependency>
+```
+:::tip
+Openjob must dependent one H2 database driver
+:::
+
+## Task execution log not showing
+If the log configuration is correct, the management task execution log is not displayed, and there is no error log on the client and server. You need to check whether the client has enabled asynchronous log, please configure the Openjob Log Appender as synchronous.
+
+:::caution
+Openjob client log only supports synchronous, and asynchronous will cause the task context to be lost.
+:::
+
+## Server can not be connected
+Server start normally without error logs, but client cannot be connected. Check whether the IP by the server startup is the real IP of the machine, 
+if not the real IP, please specify the server binding IP. The general reasons are:
+- Docker deployment on the Server machine, and the correct IP cannot be obtained
+- Multiple network on the Server machine, and the correct IP cannot be obtained
+
+- Like this configure server, Container environment can configure `AKKA_BIND_HOSTNAME` environment variable, server obtains the local IP by default
+```properties
+akka.bind.hostname=${AKKA_BIND_HOSTNAME:}
+```
+
+:::danger
+Server must obtain the real IP of the machine, Otherwise the cluster communication is abnormal.
+:::

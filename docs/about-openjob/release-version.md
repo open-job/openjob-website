@@ -3,13 +3,31 @@ sidebar_position: 1
 ---
 
 # Changelog
-## Version Description
-The naming rule for `Openjob` version numbers is: `(v major version).(minor version).(bug fix version)`.
+## Release introduction
+Release version like this: `v(main version).(feature version).(fix version)`.
 :::tip 
-for example v1.0.1 is the bug fix version after v1.0.0, and v1.1.0 is the functional version after v1.0.0. 
+v1.0.1 is bug fix for v1.0.0, and v1.1.0 is the feature release after v1.0.0. 
 :::
 
-Openjob will release functional versions monthly and major versions annually.
+Openjob release feature on a monthly and main release on an annual.
+## V1.0.2
+
+**Feature**
+- [[#95](https://github.com/open-job/openjob/pull/95)] Add Elasticsearch7 log storage
+- [[#98](https://github.com/open-job/openjob/pull/98)] Add job dashboard
+- [[#99](https://github.com/open-job/openjob/pull/99)] Add auto clean for instance, server node, worker node and Logs
+
+**Bugfix**
+
+- [[#95](https://github.com/open-job/openjob/pull/95)] Fix domain for management
+- [[#96](https://github.com/open-job/openjob/pull/96)] Fix slots
+- [[#99](https://github.com/open-job/openjob/pull/99)] Fix cache of delay task
+- [[#99](https://github.com/open-job/openjob/pull/99)] Fix delay task execution time
+- [[#101](https://github.com/open-job/openjob/pull/101)] Fix many client on a machine
+
+**Optimize**
+- [[#97](https://github.com/open-job/openjob/pull/97)] Bean Mapper
+- [[#99](https://github.com/open-job/openjob/pull/99)] Register application
 
 ## V1.0.1
 May 19, 2023
