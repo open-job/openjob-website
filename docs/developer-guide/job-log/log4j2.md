@@ -4,11 +4,15 @@ sidebar_position: 2
 
 # Log4j2
 
-## Configure Dependencies
+## Dependency
 
-Java
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```shell
+<Tabs>
+  <TabItem value="java" label="Java" default>
+
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
   <groupId>io.openjob.worker</groupId>
@@ -16,10 +20,10 @@ Java
   <version>${openjob.worker.version}</version>
 </dependency>
 ```
+  </TabItem>
+  <TabItem value="spring-boot" label="Spring Boot">
 
-Spring boot
-
-```shell
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
     <groupId>io.openjob.worker</groupId>
@@ -27,16 +31,18 @@ Spring boot
     <version>${openjob.worker.version}</version>
 </dependency>
 ```
+  </TabItem>
+</Tabs>
 
 :::tip
-Simply replace the string `latest` with the corresponding version.
+`latest` replace with the latest version
 :::
 
-## Log Configure
+## Configuration
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration packages="io.openjob.worker.appender">
+<Configuration>
     <Appenders>
         <!-- Openjob appender -->
         <OpenjobLog4j2Appender name="openjobLog"
@@ -46,11 +52,11 @@ Simply replace the string `latest` with the corresponding version.
             <PatternLayout pattern="%d %-5level [%thread] %logger{0}: %msg"/>
         </OpenjobLog4j2Appender>
 
-        <!-- Other configure -->
+        <!-- other -->
     </Appenders>
 
     <Loggers>
-        <!-- Other configure -->
+        <!-- other -->
         <Root level="all">
         </Root>
         <!--- Openjob logger -->
@@ -62,10 +68,10 @@ Simply replace the string `latest` with the corresponding version.
 ```
 
 :::tip
-The `packages` must be configured to define the path for finding plugins.
+Openjob log appender only support synchronous
 :::
 
-## Log Collection
+## Collection
 
 ```java
 package io.openjob.samples.spring.boot.processor;

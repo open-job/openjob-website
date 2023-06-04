@@ -2,15 +2,15 @@
 sidebar_position: 1
 ---
 
-# Ordinary
+# Processor
 
-Ordinary executors are the carriers of task execution, implementing task functions through code integration, with slight differences in different programming languages.
+Processor is used to run job, different languages have different implemented
 
-## Integrating in Java
+## Java
 
 ### Maven
 
-```shell
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
   <groupId>io.openjob.worker</groupId>
@@ -20,8 +20,12 @@ Ordinary executors are the carriers of task execution, implementing task functio
 ```
 
 :::tip
-Simply replace the string `latest` with the corresponding version.
+`latest` replace with the latest version
 :::
+
+### Configuration
+
+Complete configuration see [configuration-reference](/docs/developer-guide/config-reference/java)
 
 ### Example
 
@@ -49,19 +53,19 @@ public class JavaProcessorSample implements JavaProcessor {
 }
 ```
 
-The executor name `io.openjob.samples.java.processor.JavaProcessorSample`
+Processor name is `io.openjob.samples.java.processor.JavaProcessorSample`
 
 :::tip
-The ordinary executor name in Java is the fully qualified class name
+Processor name is complete class name.
 :::
 
-## Integrating in Spring Boot
+## Spring Boot 集成
 
-There are two ways to define executors for integration in Spring Boot, and the two definitions have different use cases.
+Spring Boot have two method to define processor.
 
 ### Maven
 
-```shell
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
     <groupId>io.openjob.worker</groupId>
@@ -71,10 +75,14 @@ There are two ways to define executors for integration in Spring Boot, and the t
 ```
 
 :::tip
-Simply replace the string `latest` with the corresponding version.
+`latest` replace with the latest version
 :::
 
-### @Openjob Example
+### Configuration
+
+Complete configuration see [configuration-reference](/docs/developer-guide/config-reference/spring-boot)
+
+### @Openjob example
 
 ```java
 package io.openjob.samples.spring.boot.processor;
@@ -108,13 +116,13 @@ public class StandaloneAnnotationProcessor {
 }
 ```
 
-The `@Openjob` approach is a simplified way of defining executors, using annotations to define the executor name. The example above defines an executor named annotationProcessor.
+`@Openjob` is simple method to define processor by annotation.
 
 :::caution
-The `@Openjob` annotation-based approach for defining executors only supports standalone mode usage and is not supported in other distributed models.
+`@Openjob` only support standalone to define processor.
 :::
 
-### @Component Example
+### @Component example
 
 ```java
 package io.openjob.samples.spring.boot.processor;
@@ -142,8 +150,8 @@ public class StandaloneProcessor implements JavaProcessor {
 }
 ```
 
-The executor name is the same as the bean name: `io.openjob.samples.java.processor.JavaProcessorSample`.
+Processor name is bean name of `io.openjob.samples.java.processor.JavaProcessorSample`, and support `@Component("xxx")` method.
 
 :::tip
-This approach requires implementing the corresponding interface, and different distributed models have different implementations.
+`@Component` method must implement the interface, and different distributed mode have different implementations.
 :::

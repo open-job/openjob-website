@@ -4,12 +4,11 @@ sidebar_position: 2
 
 # Delay Job
 
-Normal cron job can support most application scenarios, but cannot be supported in some scenarios, such as execution task after some time.
+Cron job can support most application scenarios, but cannot be supported in some scenarios, such as execution task after some time.
 
 ## Server configuration
 
-Server 端延时任务默认关闭，若需使用必须开启延时任务且配置可用的 Redis 缓存。
-Delay job is disable by default, If need, you must enable delayed tasks and configure an available Redis cache.
+Delay job is disable by default, If needed, you must enable delay job and configure Redis cache.
 
 ```properties
 openjob.scheduler.delay.enable=${OJ_SCHEDULER_DELAY_ENABLE:false}
@@ -24,12 +23,11 @@ spring.redis.lettuce.pool.time-between-eviction-runs=60s
 ```
 
 :::tip
-延时任务基于 Redis 实现，使用时必须配置，完整 Server 端配置参数，请参见[配置参考](/docs/developer-guide/config-reference/server)
+Delay job is based on Redis, which must be configured when using it, more configuration see [configuration-reference](/docs/developer-guide/config-reference/server)
 :::
 
 ## 客户端
-
-Worker 客户端默认关闭延时任务，使用时必须开启，完整客户端配置，请参见[配置参考 Java](/docs/developer-guide/config-reference/java) 或 [配置参考 Spring Boot](/docs/developer-guide/config-reference/spring-boot)
+Delay job is disable on worker client by default，must be configured enable when using，more configuration see [configuration-reference/Java](/docs/developer-guide/config-reference/java) or [configuration-reference/Spring Boot](/docs/developer-guide/config-reference/spring-boot)
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -54,10 +52,10 @@ spring.openjob.delay.timeout=200
 ## 发送延时消息
 
 核心参数：
-- `topic` 延时消息主题，一类延时任务一个主题且必须全局唯一。
-- `executeTime` 延时任务执行时间
-- `params` 延时任务参数(类似 HTTP 协议消息体)
-- `extra` 延时任务扩展参数(类似 HTTP 协议头部)
+- `topic` Delay job topic and must be global unique.
+- `executeTime` Execute time(second) in the future.
+- `params` Job params(Like HTTP body).
+- `extra` Job extra params(Like HTTP header).
 
 <Tabs>
   <TabItem value="java" label="Java" default>
@@ -90,7 +88,7 @@ public class DelayServiceImpl implements DelayService {
 ```
 
 :::tip
-`OpenjobDelayTemplate` 建议封装成单例使用
+`OpenjobDelayTemplate` is best to singleton.
 :::
 </TabItem>
 <TabItem value="spring-boot" label="Spring Boot">
@@ -132,12 +130,12 @@ public class DelayServiceImpl implements DelayService {
   </TabItem>
 </Tabs>
 
-## 延时执行器
+## Delay processor
 
-定义延时任务执行器与普通执行器(单机模型)完全一样
+Delay processor is exactly the same as the cron processor (stand-alone)
 
 :::caution
-延时执行器建，建议根据 `context.getDelayTaskId()` 实现幂等，否则会重复执行。
+You can use `context.getDelayTaskId()` to implement idempotent.
 :::
 
 <Tabs>
@@ -199,7 +197,7 @@ public class DelayAnnotationProcessor {
 ```
 
 :::tip
-Spring Boot 集成时，也支持通过 `@Component` 注解方式定义执行器
+Spring Boot also support  `@Component` to define processor.
 :::
 </TabItem>
 </Tabs>

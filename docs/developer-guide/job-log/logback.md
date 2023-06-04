@@ -4,11 +4,15 @@ sidebar_position: 3
 
 # Logback
 
-## Configure Dependencies
+## Dependency
 
-Java
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```shell
+<Tabs>
+  <TabItem value="java" label="Java" default>
+
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
   <groupId>io.openjob.worker</groupId>
@@ -16,10 +20,10 @@ Java
   <version>${openjob.worker.version}</version>
 </dependency>
 ```
+  </TabItem>
+  <TabItem value="spring-boot" label="Spring Boot">
 
-Spring boot
-
-```shell
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
     <groupId>io.openjob.worker</groupId>
@@ -27,12 +31,14 @@ Spring boot
     <version>${openjob.worker.version}</version>
 </dependency>
 ```
+  </TabItem>
+</Tabs>
 
 :::tip
-Simply replace the string `latest` with the corresponding version.
+`latest` Openjob log Appender only support synchronous
 :::
 
-## Log Configure
+## Configuration
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -48,11 +54,15 @@ Simply replace the string `latest` with the corresponding version.
         <appender-ref ref="OpenjobAppender"/>
     </logger>
 
-    <!-- 其它日志配置 -->
+    <!-- other -->
 </configuration>
 ```
 
-## Log Collection
+:::tip
+Openjob log appender only support synchronous
+:::
+
+## Collection
 
 ```java
 package io.openjob.samples.spring.boot.processor;

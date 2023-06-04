@@ -4,11 +4,15 @@ sidebar_position: 1
 
 # Log4j
 
-## Configure Dependencies
+## Dependency
 
-Java
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-```shell
+<Tabs>
+  <TabItem value="java" label="Java" default>
+
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
   <groupId>io.openjob.worker</groupId>
@@ -16,10 +20,10 @@ Java
   <version>${openjob.worker.version}</version>
 </dependency>
 ```
+  </TabItem>
+  <TabItem value="spring-boot" label="Spring Boot">
 
-Spring Boot
-
-```shell
+```xml
 <openjob.worker.version>latest</openjob.worker.version>
 <dependency>
     <groupId>io.openjob.worker</groupId>
@@ -27,12 +31,14 @@ Spring Boot
     <version>${openjob.worker.version}</version>
 </dependency>
 ```
+  </TabItem>
+</Tabs>
 
 :::tip
-Simply replace the string `latest` with the corresponding version.
+`latest` replace with the latest version
 :::
 
-## Configure Appender
+## Configuration
 
 ```properties
 log4j.rootLogger = INFO,console
@@ -40,7 +46,11 @@ log4j.logger.openjob=openjobLog
 log4j.appender.openjobLog=io.openjob.worker.appender.OpenjobLog4jAppender
 ```
 
-## Log Collection
+:::tip
+Openjob log appender only support synchronous
+:::
+
+## Collection
 
 ```java
 package io.openjob.samples.spring.boot.processor;

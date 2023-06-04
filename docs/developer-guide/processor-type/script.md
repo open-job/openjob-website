@@ -2,6 +2,6 @@
 sidebar_position: 2
 ---
 
-# Script
+# Shell
 
 Coming soon, stay tuned!
