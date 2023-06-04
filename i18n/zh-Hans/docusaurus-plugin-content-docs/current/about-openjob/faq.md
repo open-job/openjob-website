@@ -66,7 +66,12 @@ Server 服务正常启动，无异常日志，但是客户端无法连接。此�
 - Server 机器上存在 Docker 部署，导致获取本机 IP 错误
 - Server 机器上存在多网卡，未能获取正确的 IP
 
-:::tip
+如下方式配置 Server 启动 IP，容器环境可以通过 `AKKA_BIND_HOSTNAME` 环境变量指定，默认自动获取本机 IP
+```properties
+akka.bind.hostname=${AKKA_BIND_HOSTNAME:}
+```
+
+:::danger
 Server 端必须保证启动获取到真实的 IP，否则集群通信异常。
 :::
 

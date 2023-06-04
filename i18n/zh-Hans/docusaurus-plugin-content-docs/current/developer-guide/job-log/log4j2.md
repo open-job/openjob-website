@@ -42,7 +42,7 @@ import TabItem from '@theme/TabItem';
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration packages="io.openjob.worker.appender">
+<Configuration>
     <Appenders>
         <!-- Openjob appender -->
         <OpenjobLog4j2Appender name="openjobLog"
@@ -68,7 +68,7 @@ import TabItem from '@theme/TabItem';
 ```
 
 :::tip
-必须配置 `packages` 定义插件查找包路径。
+Openjob 日志 Appender 只支持同步，如果配置异步会导致任务日志无法收集。
 :::
 
 ## 日志采集

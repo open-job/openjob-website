@@ -9,7 +9,7 @@ sidebar_position: 1
 在 [RELEASE](https://github.com/open-job/openjob/releases/) 页面下载相应版本并解压。
 
 ```shell
-tar -zxvf openjob-server-1.0.1.tar.gz
+tar -zxvf openjob-server-x.x.x.tar.gz
 ```
 
 ## 目录结构

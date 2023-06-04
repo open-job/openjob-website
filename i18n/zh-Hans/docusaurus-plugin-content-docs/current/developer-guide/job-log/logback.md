@@ -58,6 +58,10 @@ import TabItem from '@theme/TabItem';
 </configuration>
 ```
 
+:::tip
+Openjob 日志 Appender 只支持同步，如果配置异步会导致任务日志无法收集。
+:::
+
 ## 日志采集
 
 ```java

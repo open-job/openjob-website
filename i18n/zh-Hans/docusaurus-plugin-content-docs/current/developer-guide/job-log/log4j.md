@@ -46,6 +46,10 @@ log4j.logger.openjob=openjobLog
 log4j.appender.openjobLog=io.openjob.worker.appender.OpenjobLog4jAppender
 ```
 
+:::tip
+Openjob 日志 Appender 只支持同步，如果配置异步会导致任务日志无法收集。
+:::
+
 ## 日志采集
 
 ```java
