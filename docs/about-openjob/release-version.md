@@ -23,7 +23,7 @@ Openjob release feature on a monthly and main release on an annual.
 - [[#96](https://github.com/open-job/openjob/pull/96)] Fix slots
 - [[#99](https://github.com/open-job/openjob/pull/99)] Fix cache of delay task
 - [[#99](https://github.com/open-job/openjob/pull/99)] Fix delay task execution time
-- [[#101](https://github.com/open-job/openjob/pull/101)] Fix many client on a machine
+- [[#101](https://github.com/open-job/openjob/pull/101)] Fix many client on a system
 
 **Optimize**
 - [[#97](https://github.com/open-job/openjob/pull/97)] Bean Mapper

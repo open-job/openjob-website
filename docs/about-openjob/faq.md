@@ -60,16 +60,16 @@ Openjob client log only supports synchronous, and asynchronous will cause the ta
 :::
 
 ## Server can not be connected
-Server start normally without error logs, but client cannot be connected. Check whether the IP by the server startup is the real IP of the machine, 
+Server start normally without error logs, but client cannot be connected. Check whether the IP by the server startup is the real IP of the system, 
 if not the real IP, please specify the server binding IP. The general reasons are:
-- Docker deployment on the Server machine, and the correct IP cannot be obtained
-- Multiple network on the Server machine, and the correct IP cannot be obtained
+- Docker deployment on the Server system, and the correct IP cannot be goted
+- Multiple network on the Server system, and the correct IP cannot be goted
 
-- Like this configure server, Container environment can configure `AKKA_BIND_HOSTNAME` environment variable, server obtains the local IP by default
+- Like this configure server, Container environment can configure `AKKA_BIND_HOSTNAME` environment variable, server get the local IP by default
 ```properties
 akka.bind.hostname=${AKKA_BIND_HOSTNAME:}
 ```
 
 :::danger
-Server must obtain the real IP of the machine, Otherwise the cluster communication is abnormal.
+Server must get the real IP of the system, Otherwise the cluster communication is abnormal.
 :::
