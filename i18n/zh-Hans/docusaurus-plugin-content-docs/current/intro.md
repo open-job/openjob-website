@@ -40,6 +40,7 @@ import wxUrl from './assets/wx.png';
 
 <img src={wxUrl} alt="wx" width="200"/>
 
+
 - 微信公众号:
 
 import gzhUrl from './assets/gzh.jpg';
@@ -47,7 +48,7 @@ import gzhUrl from './assets/gzh.jpg';
 
 <img src={gzhUrl} alt="wx" width="200"/>
 
-
+- QQ 交流群: 849015265
 - 联系邮箱:
   - swoft@qq.com
 
