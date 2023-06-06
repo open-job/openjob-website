@@ -11,6 +11,7 @@ v1.0.1 is bug fix for v1.0.0, and v1.1.0 is the feature release after v1.0.0.
 
 Openjob release feature on a monthly and main release on an annual.
 ## V1.0.2
+Jun 6, 2023
 
 **Feature**
 - [[#95](https://github.com/open-job/openjob/pull/95)] Add Elasticsearch7 log storage
