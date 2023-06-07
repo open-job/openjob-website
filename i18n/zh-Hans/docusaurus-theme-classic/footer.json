@@ -21,7 +21,7 @@
   },
   "link.item.label.Discord": {
     "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discordapp.com/invite/docusaurus"
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/ZUmX57fKa5"
   },
   "link.item.label.Twitter": {
     "message": "Twitter",
@@ -38,5 +38,9 @@
   "copyright": {
     "message": "Copyright © 2023 My Project, Inc. Built with Openjob.",
     "description": "The footer copyright"
+  },
+  "link.item.label.Gitter": {
+    "message": "Gitter",
+    "description": "The label of footer link with label=Gitter linking to https://gitter.im/openjob/openjob"
   }
 }

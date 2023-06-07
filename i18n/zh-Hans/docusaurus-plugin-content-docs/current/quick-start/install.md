@@ -25,9 +25,7 @@ OJ_LOG_STORAGE_MYSQL_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&
 :::tip
 1. 数据库必须手动创建
 2. 容器运行涉及多项参数配置，使用配置文件更方便，其次也可以启动时通过命令传递参数(环境变量)。
-3. 客户端与容器 Server 实现通信有两种方式
-    - 方式1(推荐)：本机 hosts 绑定 `openjob-server` 为本机 IP，客户端通过 `openjob-server` 域名连接 Server，且不用再配置 `AKKA_REMOTE_HOSTNAME` 参数
-    - 方式2: 配置 `AKKA_REMOTE_HOSTNAME` 为当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通，客户端通过 IP 连接 Server。
+3. 配置 `AKKA_REMOTE_HOSTNAME` 为当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通，客户端通过 IP 连接 Server。
 :::
 
 运行容器
@@ -62,9 +60,7 @@ services:
 ```
 :::tip
 1. 数据库必须手动创建
-2. 客户端与容器 Server 实现通信有两种方式
-    - 方式1(推荐)：本机 hosts 绑定 `openjob-server` 为本机 IP，客户端通过 `openjob-server` 域名连接 Server，且不用再配置 `AKKA_REMOTE_HOSTNAME` 参数
-    - 方式2: 配置 `AKKA_REMOTE_HOSTNAME` 为当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通，客户端通过 IP 连接 Server。
+2. 配置 `AKKA_REMOTE_HOSTNAME` 为当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通，客户端通过 IP 连接 Server。
 :::
 
 

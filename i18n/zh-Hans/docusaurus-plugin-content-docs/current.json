@@ -154,5 +154,21 @@
   "sidebar.tutorialSidebar.category.config-reference.link.generated-index.description": {
     "message": "配置参考手册",
     "description": "The generated-index page description for category config-reference in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cron scheduling": {
+    "message": "定时调度",
+    "description": "The label for category Cron scheduling in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cron scheduling.link.generated-index.description": {
+    "message": "快速了解定时任务",
+    "description": "The generated-index page description for category Cron scheduling in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configuration Reference": {
+    "message": "配置参考",
+    "description": "The label for category Configuration Reference in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Configuration Reference.link.generated-index.description": {
+    "message": "配置参考手册",
+    "description": "The generated-index page description for category Configuration Reference in sidebar tutorialSidebar"
   }
 }

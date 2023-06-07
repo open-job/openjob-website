@@ -24,9 +24,7 @@ OJ_LOG_STORAGE_MYSQL_URL=jdbc:mysql://127.0.0.1:3306/openjob?useUnicode=true&cha
 :::tip
 1. Database(`openjob`) must be created.
 2. Configuration file(`.env`) is best, because many configuration parameters.
-3. Two ways for client to communicate with the container server:
-   - One(best): bind domain `openjob-server` as local host IP by hosts. Client connect to server by `openjob-server` domain, and not configure `AKKA_REMOTE_HOSTNAME`
-   - Two: Configure `AKKA_REMOTE_HOSTNAME` as local IP, and not `127.0.0.1`
+3. Configure `AKKA_REMOTE_HOSTNAME` as local IP, and not `127.0.0.1`
 :::
 
 Docker run
@@ -60,9 +58,7 @@ services:
 
 :::tip
 1. Database(`openjob`) must be created.
-2. Two ways for client to communicate with the container server:
-    - One(best): bind domain `openjob-server` as local host IP by hosts. Client connect to server by `openjob-server` domain, and not configure `AKKA_REMOTE_HOSTNAME`
-    - Two: Configure `AKKA_REMOTE_HOSTNAME` as local IP, and not `127.0.0.1`
+2. Configure `AKKA_REMOTE_HOSTNAME` as local IP, and not `127.0.0.1`
 :::
 
 Run container
