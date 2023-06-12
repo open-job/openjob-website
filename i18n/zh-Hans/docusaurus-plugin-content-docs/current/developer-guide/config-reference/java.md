@@ -8,8 +8,7 @@ Java 集成，`application.properties` 配置参数列表：
 
 | 参数名称    |                                                                                                      默认值 | 描述  |
 |:----------|---------------------------------------------------------------------------------------------------------:|:--:|
-| `openjob.server.host` | localhost | Server Host |
-| `openjob.server.port` | `25520` | Server Port |
+| `openjob.server.address` | `http://localhost:8080` | Server 集群地址 |
 | `openjob.worker.host` | localhost | Worker Host |
 | `openjob.worker.port` | `25588` | Worker port |
 | `openjob.worker.app.name` | - | 应用名称，必须配置 |

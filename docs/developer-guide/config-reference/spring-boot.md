@@ -9,8 +9,7 @@ Spring Boot 集成配置参数列表：
 | 参数名称    |                                                                                                      默认值 | 描述  |
 |:----------|---------------------------------------------------------------------------------------------------------:|:--:|
 | `spring.openjob.enable` | `true` | 是否开启 |
-| `spring.openjob.server.host` | localhost | Server Host |
-| `spring.openjob.server.port` | `25520` | Server Port |
+| `spring.openjob.server.address` | `http://localhost:8080` | Server address |
 | `spring.openjob.worker.heartbeat-interval` | `20` | 心跳时间，单位秒 |
 | `spring.openjob.worker.host` | localhost | Worker host  |
 | `spring.openjob.worker.port` | `25588` | Worker prot |

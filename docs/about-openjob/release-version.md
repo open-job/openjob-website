@@ -10,6 +10,21 @@ v1.0.1 is bug fix for v1.0.0, and v1.1.0 is the feature release after v1.0.0.
 :::
 
 Openjob release feature on a monthly and main release on an annual.
+
+## V1.0.3
+Jun 12, 2023
+
+**Bugfix**
+- [[#109](https://github.com/open-job/openjob/pull/109)] Fix timing wheel
+- [[#109](https://github.com/open-job/openjob/pull/109)] Fix cluster connect
+- [[#109](https://github.com/open-job/openjob/pull/109)] Fix delay slots with cluster
+- [[#109](https://github.com/open-job/openjob/pull/109)] Fix job slots with cluster
+
+**Optimize**
+- [[#109](https://github.com/open-job/openjob/pull/109)] Cluster connect mode
+- [[#109](https://github.com/open-job/openjob/pull/109)] Worker heartbeat
+- [[#109](https://github.com/open-job/openjob/pull/109)] Task log
+
 ## V1.0.2
 Jun 6, 2023
 

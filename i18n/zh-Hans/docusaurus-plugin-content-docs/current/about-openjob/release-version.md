@@ -11,7 +11,24 @@ v1.0.1 是 v1.0.0 之后的Bug修复版本 v1.1.0 是 v1.0.0 之后的功能版�
 
 Openjob 将按月发布功能版本、按年度发布大版本。
 
+## V1.0.3
+
+2023年6月12日
+
+**修复**
+- [[#109](https://github.com/open-job/openjob/pull/109)] 修复时间轮计算不正确问题
+- [[#109](https://github.com/open-job/openjob/pull/109)] 修复集群无法连接问题
+- [[#109](https://github.com/open-job/openjob/pull/109)] 修复集群延时任务分片不正确问题
+- [[#109](https://github.com/open-job/openjob/pull/109)] 修复集群任务分片不正确问题
+
+**优化**
+- [[#109](https://github.com/open-job/openjob/pull/109)] 优化集群连接方式
+- [[#109](https://github.com/open-job/openjob/pull/109)] 优化工作节点心跳
+- [[#109](https://github.com/open-job/openjob/pull/109)] 优化执行器日志上报
+
 ## V1.0.2
+
+2023年6月6日
 
 **新增**
 - [[#95](https://github.com/open-job/openjob/pull/95)] 新增 Elasticsearch7 日志存储
