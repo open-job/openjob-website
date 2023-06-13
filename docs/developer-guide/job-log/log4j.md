@@ -50,7 +50,7 @@ log4j.appender.openjobLog=io.openjob.worker.appender.OpenjobLog4jAppender
 Openjob log appender only support synchronous
 :::
 
-## Collection
+## Collect
 
 ```java
 package io.openjob.samples.spring.boot.processor;

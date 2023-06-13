@@ -71,7 +71,7 @@ import TabItem from '@theme/TabItem';
 Openjob log appender only support synchronous
 :::
 
-## Collection
+## Collect
 
 ```java
 package io.openjob.samples.spring.boot.processor;
