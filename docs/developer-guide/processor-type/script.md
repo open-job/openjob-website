@@ -4,4 +4,4 @@ sidebar_position: 2
 
 # Shell
 
-Coming soon, stay tuned!
+Coming soon!

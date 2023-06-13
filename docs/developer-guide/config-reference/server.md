@@ -38,7 +38,7 @@ Environment variables generally used for Docker and Kubernetes.
 | OJ_REDIS_DB  | 0 | redis db |
 | OJ_REDIS_PORT | 6379 | redis port |
 | SPRING_JPA_SHOW_SQL  | false | SQL show status，default `false` |
-| AKKA_REMOTE_HOSTNAME  | openjob-server | remote address |
+| AKKA_REMOTE_HOSTNAME  | 本机IP | remote address |
 | AKKA_REMOTE_PORT  | 25520 | remote port |
 | AKKA_BIND_HOSTNAME  | 本机IP | server address |
 | AKKA_BIND_PORT  | 25520 | server port |
@@ -104,7 +104,7 @@ spring.redis.lettuce.pool.max-idle=8
 spring.redis.lettuce.pool.max-wait=1000
 spring.redis.lettuce.pool.time-between-eviction-runs=60s
 spring.jpa.show-sql=${SPRING_JPA_SHOW_SQL:false}
-akka.remote.hostname=${AKKA_REMOTE_HOSTNAME:openjob-server}
+akka.remote.hostname=${AKKA_REMOTE_HOSTNAME:}
 akka.remote.port=${AKKA_REMOTE_PORT:25520}
 akka.bind.hostname=${AKKA_BIND_HOSTNAME:}
 akka.bind.port=${AKKA_BIND_PORT:25520}

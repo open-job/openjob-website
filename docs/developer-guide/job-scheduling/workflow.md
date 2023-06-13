@@ -4,4 +4,4 @@ sidebar_position: 3
 
 # Workflow
 
-Coming soon, stay tuned!
+Coming soon!

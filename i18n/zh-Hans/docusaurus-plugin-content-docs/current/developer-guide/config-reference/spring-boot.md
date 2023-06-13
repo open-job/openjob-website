@@ -10,7 +10,7 @@ Spring Boot 集成配置参数列表：
 |:----------|---------------------------------------------------------------------------------------------------------:|:--:|
 | `spring.openjob.enable` | `true` | 是否开启 |
 | `spring.openjob.server.address` | `http://localhost:8080` | Server 集群地址 |
-| `spring.openjob.worker.heartbeat-interval` | `20` | 心跳时间，单位秒 |
+| `spring.openjob.worker.heartbeat-interval` | `5` | 心跳时间，单位秒 |
 | `spring.openjob.worker.host` | localhost | Worker host  |
 | `spring.openjob.worker.port` | `25588` | Worker prot |
 | `spring.openjob.worker.app-name` | - | 应用名称，必须配置 |
@@ -26,5 +26,5 @@ Spring Boot 集成配置参数列表：
 | `spring.openjob.delay.timeout` | `3000L` | 延时任务发送超时时间，单位毫秒 |
 
 :::danger
-`spring.openjob.actor.heartbeat-num` 最大支持 20s，如果设置超过最大值会导致工作节点状态异常
+`spring.openjob.worker.heartbeat-interval` 最大支持 5s，如果设置超过最大值会导致工作节点状态异常
 :::
