@@ -6,7 +6,7 @@ import Translate from '@docusaurus/Translate';
 const FeatureList = [
   {
     title: <Translate>High reliability</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/home/one-1.svg').default,
     description: (
       <Translate>
         Distributed with stateless design by Master/Worker architecture, only on one type of database (MySQL/PostgreSQL/Oracle)
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: <Translate>High performance</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/home/one-2.svg').default,
     description: (
       <Translate>
         Task scheduling to the second level, lightweight distributed computing, sharding algorithm and unlimited scaling
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Timing scheduling</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/home/one-3.svg').default,
     description: (
       <Translate>
         Support distributed timing tasks, fixed-frequency tasks, high-performance second-level tasks, and timing scheduling of one-time tasks
@@ -35,7 +35,7 @@ const FeatureList = [
 
   {
     title: <Translate>Distributed computing</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/home/two-1.svg').default,
     description: (
       <Translate>
         Support stand-alone, broadcast, Map, MapReduce and shard a variety of distributed programming models, easy to achieve big data distributed computing.
@@ -45,7 +45,7 @@ const FeatureList = [
 
   {
     title: <Translate>Delayed task</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/home/two-2.svg').default,
     description: (
       <Translate>
         Implement high performance delayed tasks based on Redis, support multi-level storage of delayed tasks and rich task management.
@@ -55,7 +55,7 @@ const FeatureList = [
 
   {
     title: <Translate>Work flow</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/home/two-3.svg').default,
     description: (
       <Translate>
         Built-in workflow scheduling engine to support visual DAG,It is convenient and efficient to realize complex task scheduling.
@@ -66,7 +66,7 @@ const FeatureList = [
 
   {
     title: <Translate>Authority management</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/home/three-1.svg').default,
     description: (
       <Translate>
         Namespace design, supports rich rights management, accurate to the button level
@@ -75,7 +75,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Alarm monitoring</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/home/three-2.svg').default,
     description: (
       <Translate>
         Comprehensive monitoring indicators, rich and timely alarm methods, easy for operators to quickly locate and solve online problems.
@@ -84,7 +84,7 @@ const FeatureList = [
   },
   {
     title: <Translate>Cross-language</Translate>,
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/home/three-3.svg').default,
     description: (
       <Translate>
         Officials provide Java/Go/PHP redundant support, as well as Spring Boot、 Gin、 Swoft and other common framework integration.
