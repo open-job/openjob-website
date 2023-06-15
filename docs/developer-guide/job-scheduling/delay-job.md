@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Delay Job
 
-Cron job can support most application scenarios, but cannot be supported in some scenarios, such as execution task after some time.
+Cronjob can support most application scenarios, but cannot be supported in some scenarios, such as execution task after some time.
 
 ## Server configuration
 
