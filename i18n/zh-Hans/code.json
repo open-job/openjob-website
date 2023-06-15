@@ -315,13 +315,13 @@
     "message": "高可靠"
   },
   "Distributed with stateless design by Master/Worker architecture, only on one type of database (MySQL/PostgreSQL/Oracle)": {
-    "message": "分布式无状态设计，采用 Master/Worker 架构，只依赖一种数据库(MySQL/PostgreSQL/Oracle)"
+    "message": "分布式无状态设计，采用 Master/Worker 架构，支持多样的数据库(MySQL/PostgreSQL/Oracle)"
   },
   "High performance": {
     "message": "高性能"
   },
   "Task scheduling to the second level, lightweight distributed computing, sharding algorithm and unlimited scaling": {
-    "message": "任务调度精确到秒级别，支持轻量级分布式计算，底层使用一致性分片算法，支持无限扩容。"
+    "message": "底层使用一致性分片算法，全程无锁化设计，任务调度精确到秒级别，支持轻量级分布式计算、无限水平扩容。"
   },
   "Timing scheduling": {
     "message": "定时调度"
@@ -339,7 +339,7 @@
     "message": "延迟任务"
   },
   "Implement high performance delayed tasks based on Redis, support multi-level storage of delayed tasks and rich task management.": {
-    "message": "基于 Redis 高性能延时任务，底层任务多级存储，提供丰富的任务管理。"
+    "message": "基于 Redis 实现高性能延时任务，底层实现任务多级存储，提供丰富的统计和报表。"
   },
   "Work flow": {
     "message": "工作流程"
@@ -351,7 +351,7 @@
     "message": "权限管理"
   },
   "Namespace design, supports rich rights management, accurate to the button level": {
-    "message": "命名空间设计，丰富的按钮级别权限管理。"
+    "message": "完善的用户管理，支持菜单、按钮以及数据权限设置，灵活管理用户权限"
   },
   "Alarm monitoring": {
     "message": "告警监控"
@@ -363,9 +363,9 @@
     "message": "跨语言"
   },
   "Officials provide Java/Go/PHP redundant support, as well as Spring Boot、 Gin、 Swoft and other common framework integration.": {
-    "message": "支持 Java/Go/PHP/Python 多语言 ，以及Spring Boot、Gin、Swoft 常见框架集成。"
+    "message": "原生支持 Java/Go/PHP/Python 多语言 ，以及Spring Boot、Gin、Swoft 等框架集成。"
   },
   "A distributed high-performance task scheduling framework, multiple crontab, delayed task, workflow, and unlimited scaling": {
-    "message": "一款分布式高性能任务调度框架，支持多种定时任务、延时任务、工作流设计、无限扩容"
+    "message": "一款分布式高性能任务调度框架，支持多种定时任务、延时任务、工作流设计、轻量级分布式计算、无限水平扩容，并具有较高的可伸缩性和容错性，以及完善权限管理、强大的告警监控、原生支持多语言。"
   }
 }
