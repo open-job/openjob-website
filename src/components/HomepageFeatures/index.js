@@ -9,7 +9,7 @@ const FeatureList = [
     Svg: require('@site/static/img/home/one-1.svg').default,
     description: (
       <Translate>
-        Distributed with stateless design by Master/Worker architecture, only on one type of database (MySQL/PostgreSQL/Oracle)
+        Distributed with stateless design, using the Master/Worker architecture, supports multiple databases (MySQL/PostgreSQL/Oracle)
       </Translate>
     ),
   },
@@ -18,17 +18,17 @@ const FeatureList = [
     Svg: require('@site/static/img/home/one-2.svg').default,
     description: (
       <Translate>
-        Task scheduling to the second level, lightweight distributed computing, sharding algorithm and unlimited scaling
+        System uses a consistency sharding algorithm, lock-free design, task scheduling is accurate down to the second, supporting lightweight distributed computing and unlimited horizontal scaling
       </Translate>
 
     ),
   },
   {
-    title: <Translate>Timing scheduling</Translate>,
+    title: <Translate>Cronjob</Translate>,
     Svg: require('@site/static/img/home/one-3.svg').default,
     description: (
       <Translate>
-        Support distributed timing tasks, fixed-frequency tasks, high-performance second-level tasks, and timing scheduling of one-time tasks
+        Supports distributed cronjob, fixed rate tasks, high-performance second tasks, and onetime tasks
       </Translate>
     ),
   },
@@ -38,38 +38,38 @@ const FeatureList = [
     Svg: require('@site/static/img/home/two-1.svg').default,
     description: (
       <Translate>
-        Support stand-alone, broadcast, Map, MapReduce and shard a variety of distributed programming models, easy to achieve big data distributed computing.
+        Supports multiple distributed programming models such as standalone, broadcast, Map, MapReduce, and sharding, easy to complete distributed computing for big data
       </Translate>
     ),
   },
 
   {
-    title: <Translate>Delayed task</Translate>,
+    title: <Translate>Delay task</Translate>,
     Svg: require('@site/static/img/home/two-2.svg').default,
     description: (
       <Translate>
-        Implement high performance delayed tasks based on Redis, support multi-level storage of delayed tasks and rich task management.
+        High performance delay task based on Redis , support multi-level storage, and provides rich statistics and reports
       </Translate>
     ),
   },
 
   {
-    title: <Translate>Work flow</Translate>,
+    title: <Translate>Workflow</Translate>,
     Svg: require('@site/static/img/home/two-3.svg').default,
     description: (
       <Translate>
-        Built-in workflow scheduling engine to support visual DAG,It is convenient and efficient to realize complex task scheduling.
+        Supports workflow scheduling engine, visual DAG design, and easy to complete complex task scheduling
       </Translate>
     ),
   },
 
 
   {
-    title: <Translate>Authority management</Translate>,
+    title: <Translate>Permission management</Translate>,
     Svg: require('@site/static/img/home/three-1.svg').default,
     description: (
       <Translate>
-        Namespace design, supports rich rights management, accurate to the button level
+        Perfect user management, supports menu, button, and data permission settings, flexible management of user permissions
       </Translate>
     ),
   },
@@ -78,16 +78,16 @@ const FeatureList = [
     Svg: require('@site/static/img/home/three-2.svg').default,
     description: (
       <Translate>
-        Comprehensive monitoring indicators, rich and timely alarm methods, easy for operators to quickly locate and solve online problems.
+        Overall monitoring metrics, rich and alarm in time, easy to locate and resolve online problem
       </Translate>
     ),
   },
   {
-    title: <Translate>Cross-language</Translate>,
+    title: <Translate>Multiple languages</Translate>,
     Svg: require('@site/static/img/home/three-3.svg').default,
     description: (
       <Translate>
-        Officials provide Java/Go/PHP redundant support, as well as Spring Boot、 Gin、 Swoft and other common framework integration.
+        Support multiple languages such as Java, Go, PHP, and Python, as well as build with frameworks such as Spring Boot, Gin, and Swoft
       </Translate>
     ),
   },

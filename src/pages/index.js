@@ -18,7 +18,7 @@ function HomepageHeader() {
         </div>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">
-          <Translate>A distributed high-performance task scheduling framework, multiple crontab, delayed task, workflow, and unlimited scaling</Translate>
+          <Translate>A distributed and high-performance task scheduling framework that supports multiple cronjob, delay task, workflow, lightweight distributed computing, unlimited horizontal scaling, with high scalability and fault tolerance. Also has perfect permission management, powerful alarm monitoring, and support multiple languages</Translate>
         </p>
         <div className={styles.buttons}>
           <Link
