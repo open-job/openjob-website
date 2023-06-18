@@ -40,6 +40,7 @@ Support multiple languages such as Java, Go, PHP, and Python, as well as build w
 
 ## Documentation
 
+- [Github](https://github.com/open-job/openjob)
 - [Official website](https://openjob.io)
 - [Official documentation](https://openjob.io/docs/intro/)
 - [Live demo ](https://demo.openjob.io)
@@ -48,6 +49,7 @@ Support multiple languages such as Java, Go, PHP, and Python, as well as build w
 
 ## Contact
 
+- Github: https://github.com/open-job/openjob
 - Gitter: https://gitter.im/openjob/openjob
 - Discord: https://discord.gg/ZUmX57fKa5
 - Mail: swoft@qq.com

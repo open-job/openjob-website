@@ -37,7 +37,7 @@ sidebar_position: 1
 
 ## 复制延时任务
 
-![Delete](assets/delay/delete.png)
+![Delete](assets/delay/copy.png)
 
 :::info
 基于现有延时任务快速创建一个新的延时任务。

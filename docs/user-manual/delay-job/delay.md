@@ -36,7 +36,7 @@ Delay update takes effect in real time
 
 ## Copy
 
-![Delete](assets/delay/delete.png)
+![Delete](assets/delay/copy.png)
 
 :::info
 Copy one as another
