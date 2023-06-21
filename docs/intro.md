@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Introduction
-Openjob is a distributed and high-performance task scheduling framework that supports multiple cronjob, delay task, workflow, lightweight distributed computing, unlimited horizontal scaling, with high scalability and fault tolerance. Also has perfect permission management, powerful alarm monitoring, and support multiple languages.
+Openjob is a distributed and high-performance task scheduling framework that supports multiple cronjob, delay task, workflow, lightweight distributed computing, unlimited horizontal scaling, with high scalability and fault tolerance. Also has permission management, powerful alarm monitoring, and support multiple languages.
 
 ## Feature
 ### High reliability
@@ -19,23 +19,23 @@ High performance delay task based on Redis , support multi-level storage, and pr
 ### Workflow
 Supports workflow scheduling engine, visual DAG design, and easy to complete complex task scheduling.
 ### Permission management
-Perfect user management, supports menu, button, and data permission settings, flexible management of user permissions.
+ User management, supports menu, button, and data permission settings, flexible management of user permissions.
 ### Alarm monitoring
 Overall monitoring metrics, rich and alarm in time, easy to locate and resolve online problem.
 ### Multiple languages
 Support multiple languages such as Java, Go, PHP, and Python, as well as build with frameworks such as Spring Boot, Gin, and Swoft.
 
 ## Open source
-| **Item**              |**Quartz**| **Elastic-Job**                      | **XXL-JOB**                                                         | **Openjob**                                                                                                                               |
-|-----------------------| ----- |--------------------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Cronjob               |Cron| Cron                                 | Cron                                                                | Cronjob, second, Onetime, Fixed rate                                                                                                      |
-| Delay task            |No| No                                   | No                                                                  | Distributed high-performancedelay task  based on Redis                                                                                    |
-| Workflow              |No| No                                   | No                                                                  | Workflow design with UI                                                                                                                   |
-| Distributed Computing |No| Sharding                             | Sharding                                                            | Broadcast, Map/MapReduce, Sharding                                                                                                        |
-| Multiple languages    |Java| Java, Shell                          | Java, Shell                                                         | Java(Spring Boot), Go(Gin、beego), PHP(Swoft), Python(Agent), Shell, HTTP                                                                  |
-| Visualization         |No| Weak                                 | Task history, Task log（Not support storage）, Dashboard              | Task history, Task log（support H2/Mysql/Elasticsearch）, Dashboard, Perfect permissions, Task log stack                                    |
-| Manageable            |No| enable,disable task                  | enable、disable task, execute once,  stop                            | enable、disable task, execute once, kill, stop                                                                                             |
-| Alarms                |No| email                                | email                                                               | custom event, email, webhook                                                                                                              |
+| **Item**              |**Quartz**| **Elastic-Job**                      | **XXL-JOB**                                                         | **Openjob**                                                                                                                              |
+|-----------------------| ----- |--------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| Cronjob               |Cron| Cron                                 | Cron                                                                | Cronjob, second, Onetime, Fixed rate                                                                                                     |
+| Delay task            |No| No                                   | No                                                                  | Distributed high-performancedelay task  based on Redis                                                                                   |
+| Workflow              |No| No                                   | No                                                                  | Workflow design with UI                                                                                                                  |
+| Distributed Computing |No| Sharding                             | Sharding                                                            | Broadcast, Map/MapReduce, Sharding                                                                                                       |
+| Multiple languages    |Java| Java, Shell                          | Java, Shell                                                         | Java(Spring Boot), Go(Gin、beego), PHP(Swoft), Python(Agent), Shell, HTTP                                                                 |
+| Visualization         |No| Weak                                 | Task history, Task log（Not support storage）, Dashboard              | Task history, Task log（support H2/Mysql/Elasticsearch）, Dashboard, permissions, Task log stack                                    |
+| Manageable            |No| enable,disable task                  | enable、disable task, execute once,  stop                            | enable、disable task, execute once, kill, stop                                                                                            |
+| Alarms                |No| email                                | email                                                               | custom event, email, webhook                                                                                                             |
 | Performance           |Every task scheduling try to acquire a lock through the database, causes a high pressure on the database| ZooKeeper  is performance bottleneck | Task scheduling is only by master, causes a high pressure on master | Uses sharding algorithm, each node can be scheduled without lock, supports unlimited horizontal scaling, and supports big task scheduling |
 
 ## Documentation

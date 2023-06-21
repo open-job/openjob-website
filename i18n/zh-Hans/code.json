@@ -350,7 +350,7 @@
   "Permission management": {
     "message": "权限管理"
   },
-  "Perfect user management, supports menu, button, and data permission settings, flexible management of user permissions": {
+  "User management, supports menu, button, and data permission settings, flexible management of user permissions": {
     "message": "完善的用户管理，支持菜单、按钮以及数据权限设置，灵活管理用户权限"
   },
   "Alarm monitoring": {
@@ -365,7 +365,7 @@
   "Support multiple languages such as Java, Go, PHP, and Python, as well as build with frameworks such as Spring Boot, Gin, and Swoft": {
     "message": "原生支持 Java/Go/PHP/Python 多语言 ，以及Spring Boot、Gin、Swoft 等框架集成。"
   },
-  "A distributed and high-performance task scheduling framework that supports multiple cronjob, delay task, workflow, lightweight distributed computing, unlimited horizontal scaling, with high scalability and fault tolerance. Also has perfect permission management, powerful alarm monitoring, and support multiple languages": {
+  "A distributed and high-performance task scheduling framework that supports multiple cronjob, delay task, workflow, lightweight distributed computing, unlimited horizontal scaling, with high scalability and fault tolerance. Also has permission management, powerful alarm monitoring, and support multiple languages": {
     "message": "一款分布式高性能任务调度框架，支持多种定时任务、延时任务、工作流设计、轻量级分布式计算、无限水平扩容，并具有较高的可伸缩性和容错性，以及完善权限管理、强大的告警监控、原生支持多语言。"
   }
 }

@@ -69,7 +69,7 @@ const FeatureList = [
     Svg: require('@site/static/img/home/three-1.svg').default,
     description: (
       <Translate>
-        Perfect user management, supports menu, button, and data permission settings, flexible management of user permissions
+        User management, supports menu, button, and data permission settings, flexible management of user permissions
       </Translate>
     ),
   },
