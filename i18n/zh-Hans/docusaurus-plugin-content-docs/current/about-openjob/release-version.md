@@ -11,6 +11,30 @@ v1.0.1 是 v1.0.0 之后的Bug修复版本 v1.1.0 是 v1.0.0 之后的功能版�
 
 Openjob 将按月发布功能版本、按年度发布大版本。
 
+## V1.0.4
+
+2023年7月4日
+
+**新增**
+- [[#114](https://github.com/open-job/openjob/pull/114)] 支持 Oracle
+- [[#114](https://github.com/open-job/openjob/pull/114)] 支持 Postgres
+- [[#114](https://github.com/open-job/openjob/pull/114)] 日志存储支持 Oracle
+- [[#114](https://github.com/open-job/openjob/pull/114)] 日志存储支持 Postgres
+- [[#114](https://github.com/open-job/openjob/pull/114)] Shell 调度
+- [[#114](https://github.com/open-job/openjob/pull/114)] Kettle 调度
+
+**修复**
+- [[#114](https://github.com/open-job/openjob/pull/114)] 修复登录首页错误
+- [[#114](https://github.com/open-job/openjob/pull/114)] 修复 favicon.ico
+- [[#114](https://github.com/open-job/openjob/pull/114)] 修复 Worker 注册问题
+- [[#114](https://github.com/open-job/openjob/pull/114)] 修复终止任务问题
+
+**优化**
+- [[#114](https://github.com/open-job/openjob/pull/114)] 屏蔽延时任务系统参数修改
+- [[#114](https://github.com/open-job/openjob/pull/114)] 优化登录错误提示
+- [[#114](https://github.com/open-job/openjob/pull/114)] 优化 H2 依赖
+- [[#114](https://github.com/open-job/openjob/pull/114)] 优化数据库索引
+
 ## V1.0.3
 
 2023年6月12日

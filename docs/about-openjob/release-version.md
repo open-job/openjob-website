@@ -11,6 +11,30 @@ v1.0.1 is bug fix for v1.0.0, and v1.1.0 is the feature release after v1.0.0.
 
 Openjob release feature on a monthly and main release on an annual.
 
+## V1.0.4
+
+July 4, 2023
+
+**Feature**
+- [[#114](https://github.com/open-job/openjob/pull/114)] Add Oracle
+- [[#114](https://github.com/open-job/openjob/pull/114)] Add Postgres
+- [[#114](https://github.com/open-job/openjob/pull/114)] Add Oracle log storage
+- [[#114](https://github.com/open-job/openjob/pull/114)] Add Postgres log storage
+- [[#114](https://github.com/open-job/openjob/pull/114)] Add Shell scheduling
+- [[#114](https://github.com/open-job/openjob/pull/114)] Add Kettle scheduling
+
+**Bugfix**
+- [[#114](https://github.com/open-job/openjob/pull/114)] Fix home error
+- [[#114](https://github.com/open-job/openjob/pull/114)] Fix favicon.ico
+- [[#114](https://github.com/open-job/openjob/pull/114)] Fix Worker register
+- [[#114](https://github.com/open-job/openjob/pull/114)] Fix stop job instance
+
+**Optimize**
+- [[#114](https://github.com/open-job/openjob/pull/114)] Disable delay task system configuration
+- [[#114](https://github.com/open-job/openjob/pull/114)] Login fail message
+- [[#114](https://github.com/open-job/openjob/pull/114)] H2 dependence
+- [[#114](https://github.com/open-job/openjob/pull/114)] Database index
+
 ## V1.0.3
 Jun 12, 2023
 
