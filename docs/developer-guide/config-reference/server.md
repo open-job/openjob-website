@@ -25,11 +25,17 @@ Environment variables generally used for Docker and Kubernetes.
 | OJ_LOG_STORAGE_H2_USER | root| H2 username  |
 | OJ_LOG_STORAGE_H2_PASSWORD | 123456 | H2 password |
 | OJ_LOG_STORAGE_H2_URL | `jdbc:h2:...`| H2 url |
-| OJ_LOG_STORAGE_MYSQL_USER | root| `MYSQL` username |1
+| OJ_LOG_STORAGE_MYSQL_USER | root| `MYSQL` username |
 | OJ_LOG_STORAGE_MYSQL_PASSWORD | 123456 | `MYSQL` password |
 | OJ_LOG_STORAGE_MYSQL_URL | jdbc:mysql:... | `MYSQL` database url |
+| OJ_LOG_STORAGE_ORACLE_URL |`jdbc:oracle...` | `Oracle` database url |
+| OJ_LOG_STORAGE_ORACLE_USER |openjob | `Oracle` username|
+| OJ_LOG_STORAGE_ORACLE_PASSWORD | 123456| `Oracle` password|
+| OJ_LOG_STORAGE_POSTGRESQL_URL | `jdbc:postgresql...` | `Postgres` database url |
+| OJ_LOG_STORAGE_POSTGRESQL_USER | postgres | `Postgres` username |
+| OJ_LOG_STORAGE_POSTGRESQL_PASSWORD | pg123456 | `Postgres`password |
 | OJ_LOG_STORAGE_ES7_USERNAME | - | elasticsearch username |
-| OJ_LOG_STORAGE_ES7_PASSWORD | - | elasticsearch passowrd |
+| OJ_LOG_STORAGE_ES7_PASSWORD | - | elasticsearch password |
 | OJ_LOG_STORAGE_ES7_CLUSTER_NODES | `127.0.0.1：9200` | Elasticsearch cluster address. |
 | OJ_LOG_STORAGE_ES7_SOCKET_TIMEOUT | 3000 | elasticsearch timeout(ms)|
 | OJ_SCHEDULER_DELAY_ENABLE | false | delay status，default false |
@@ -50,11 +56,15 @@ Environment variables generally used for Docker and Kubernetes.
 4. 延时任务是可选项，但是开启延时任务时，必须配置 Redis 否则无法使用。
 5. `AKKA_REMOTE_HOSTNAME` 建议根据场景配置(一般配置负载域名或IP)，否则会导致网络不通。
 6. 还有部分其它参数未通过环境变量方式，如有场景需要修改，可以通过文件挂载方式实现。
+7. `OJ_FW_LOCATIONS` 必须与使用数据源一直，否则无法自动迁移表结构
+    - Mysql `classpath:db/migration/mysql`
+    - Oracle `classpath:db/migration/oracle`
+    - Postgresql `classpath:db/migration/postgresql`
 :::
 
 ## 配置文件
 
-通过 `application.properties` 方式配置参数，一般用于直接部署或容器挂载配置文件。
+`application.properties` 方式配置参数，一般用于直接部署或容器挂载配置文件。
 
 ```shell
 server.port=${SERVER_PORT:8080}
@@ -83,12 +93,23 @@ spring.flyway.baseline-version=0
 spring.flyway.encoding=UTF-8
 spring.flyway.validate-on-migrate=false
 openjob.log.storage.selector=${OJ_LOG_STORAGE_SELECTOR:mysql}
+# h2
 openjob.log.storage.h2.properties.user=${OJ_LOG_STORAGE_H2_USER:root}
 openjob.log.storage.h2.properties.password=${OJ_LOG_STORAGE_H2_PASSWORD:123456}
 openjob.log.storage.h2.properties.url=${OJ_LOG_STORAGE_H2_URL:jdbc:h2:mem:openjob;AUTO_RECONNECT=TRUE;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;WRITE_DELAY=0;}
+# mysql
 openjob.log.storage.mysql.properties.user=${OJ_LOG_STORAGE_MYSQL_USER:root}
 openjob.log.storage.mysql.properties.password=${OJ_LOG_STORAGE_MYSQL_PASSWORD:123456}
 openjob.log.storage.mysql.properties.url=${OJ_LOG_STORAGE_MYSQL_URL:jdbc:mysql://127.0.0.1:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai}
+# oracle
+openjob.log.storage.oracle.properties.user=${OJ_LOG_STORAGE_ORACLE_USER:openjob}
+openjob.log.storage.oracle.properties.password=${OJ_LOG_STORAGE_ORACLE_PASSWORD:123456}
+openjob.log.storage.oracle.properties.url=${OJ_LOG_STORAGE_ORACLE_URL:jdbc:oracle:thin:@127.0.0.1:1521:openjob}
+# postgresql
+openjob.log.storage.postgresql.properties.user=${OJ_LOG_STORAGE_POSTGRESQL_USER:postgres}
+openjob.log.storage.postgresql.properties.password=${OJ_LOG_STORAGE_POSTGRESQL_PASSWORD:pg123456}
+openjob.log.storage.postgresql.properties.url=${OJ_LOG_STORAGE_POSTGRESQL_URL:jdbc:postgresql://127.0.0.1:5432/openjob}
+# elasticsearch7
 openjob.log.storage.elasticsearch7.username=${OJ_LOG_STORAGE_ES7_USERNAME:}
 openjob.log.storage.elasticsearch7.password=${OJ_LOG_STORAGE_ES7_PASSWORD:}
 openjob.log.storage.elasticsearch7.cluster-nodes=${OJ_LOG_STORAGE_ES7_CLUSTER_NODES:localhost:9200}
@@ -108,4 +129,39 @@ akka.remote.hostname=${AKKA_REMOTE_HOSTNAME:}
 akka.remote.port=${AKKA_REMOTE_PORT:25520}
 akka.bind.hostname=${AKKA_BIND_HOSTNAME:}
 akka.bind.port=${AKKA_BIND_PORT:25520}
+```
+
+## Example
+
+`Mysql` datasource
+```shell
+# datasource
+spring.datasource.driver-class-name=${OJ_DS_DRIVER_CLASS:com.mysql.cj.jdbc.Driver}
+spring.datasource.url=${OJ_DS_URL:jdbc:mysql://127.0.0.1:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai}
+spring.datasource.username=${OJ_DS_USERNAME:root}
+spring.datasource.password=${OJ_DS_PASSWORD:123456}
+# migration
+spring.flyway.locations=${OJ_FW_LOCATIONS:classpath:db/migration/mysql}
+```
+
+`Oracle` datasource
+```shell
+# datasource
+spring.datasource.driver-class-name=${OJ_DS_DRIVER_CLASS:oracle.jdbc.OracleDriver}
+spring.datasource.url=${OJ_DS_URL:jdbc:oracle:thin:@127.0.0.1:1521:xzxt}
+spring.datasource.username=${OJ_DS_USERNAME:openjob}
+spring.datasource.password=${OJ_DS_PASSWORD:123456}
+# migration
+spring.flyway.locations=${OJ_FW_LOCATIONS:classpath:db/migration/oracle}
+```
+
+`Postgresql` datasource
+```shell
+# datasource
+spring.datasource.driver-class-name=${OJ_DS_DRIVER_CLASS:org.postgresql.Driver}
+spring.datasource.url=${OJ_DS_URL:jdbc:postgresql://127.0.0.1:5432/openjob}
+spring.datasource.username=${OJ_DS_USERNAME:postgres}
+spring.datasource.password=${OJ_DS_PASSWORD:pg123456}
+# migration
+spring.flyway.locations=${OJ_FW_LOCATIONS:classpath:db/migration/postgresql}
 ```
