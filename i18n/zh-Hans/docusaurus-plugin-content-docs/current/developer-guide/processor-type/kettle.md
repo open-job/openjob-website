@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Kettle 执行器
 
-Worker 客户端内置 Kettle，用户无需单独实现，同时支持 Unix 和 Windows.
+Worker 客户端内置 Kettle 执行器，用户无需单独实现，同时支持 Unix 和 Windows.
 
 ![Demo](assets/kettle/demo.png)
 

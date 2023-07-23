@@ -170,5 +170,13 @@
   "sidebar.tutorialSidebar.category.Configuration Reference.link.generated-index.description": {
     "message": "配置参考手册",
     "description": "The generated-index page description for category Configuration Reference in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Worker Agent": {
+    "message": "客户端代理",
+    "description": "The label for category Worker Agent in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Worker Agent.link.generated-index.description": {
+    "message": "客户端代理",
+    "description": "The generated-index page description for category Worker Agent in sidebar tutorialSidebar"
   }
 }
