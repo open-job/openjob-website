@@ -11,6 +11,43 @@ v1.0.1 is bug fix for v1.0.0, and v1.1.0 is the feature release after v1.0.0.
 
 Openjob release feature on a monthly and main release on an annual.
 
+## V1.0.6
+
+Aug 6, 2023
+
+**Feature**
+[[#141](https://github.com/open-job/openjob/pull/141)] Add alarm and monitoring(dingding/wecom/feishu/webhook)
+[[#141](https://github.com/open-job/openjob/pull/141)] Add execute timeout for cronjob
+[[#141](https://github.com/open-job/openjob/pull/141)] Add child fail status
+[[#144](https://github.com/open-job/openjob/pull/144)] Add next execute time
+[[#144](https://github.com/open-job/openjob/pull/144)] Add personal page
+[[#144](https://github.com/open-job/openjob/pull/144)] Add running status to dashboard
+
+**Bugfix**
+[[#144](https://github.com/open-job/openjob/pull/144)] Fixed big task log
+
+**Optimize**
+[[#144](https://github.com/open-job/openjob/pull/144)] Auto create index for Elasticsearch7
+[[#144](https://github.com/open-job/openjob/pull/144)] User default avatar
+
+## V1.0.5
+
+July 19, 2023
+
+**Feature**
+
+[[#114](https://github.com/open-job/openjob/pull/114)] Add Java agent
+
+**Bugfix**
+
+[[#139](https://github.com/open-job/openjob/pull/139)] Fix worker heartbeat exception
+[[#139](https://github.com/open-job/openjob/pull/139)] Fix stop kettle for unix
+
+**Optimize**
+
+[[#139](https://github.com/open-job/openjob/pull/139)]Report job instance status
+[[#139](https://github.com/open-job/openjob/pull/139)] Report delay instance status
+
 ## V1.0.4
 
 July 4, 2023
