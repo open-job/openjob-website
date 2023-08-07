@@ -13,7 +13,7 @@ Openjob 将按月发布功能版本、按年度发布大版本。
 
 ## V1.0.6
 
-2023年8月6日
+2023年8月7日
 
 **新增**
 [[#141](https://github.com/open-job/openjob/pull/141)] 新增报警(钉钉/企微/飞书/Webhook)

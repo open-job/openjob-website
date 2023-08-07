@@ -13,7 +13,7 @@ Openjob release feature on a monthly and main release on an annual.
 
 ## V1.0.6
 
-Aug 6, 2023
+Aug 7, 2023
 
 **Feature**
 [[#141](https://github.com/open-job/openjob/pull/141)] Add alarm and monitoring(dingding/wecom/feishu/webhook)
