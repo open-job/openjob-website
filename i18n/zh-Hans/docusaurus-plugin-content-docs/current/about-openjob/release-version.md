@@ -11,25 +11,39 @@ v1.0.1 是 v1.0.0 之后的Bug修复版本 v1.1.0 是 v1.0.0 之后的功能版�
 
 Openjob 将按月发布功能版本、按年度发布大版本。
 
+## V1.0.7
+
+2023年9月10日
+
+**新增**
+- [[#154](https://github.com/open-job/openjob/pull/154)] H2 数据库支持
+- [[#155](https://github.com/open-job/openjob/pull/155)] Tidb 数据库支持
+- [[#157](https://github.com/open-job/openjob/pull/157)] Map Reduce 轻量计算任务
+- [[#157](https://github.com/open-job/openjob/pull/157)] 静态分片任务
+- [[#157](https://github.com/open-job/openjob/pull/157)] 广播任务
+- [[#157](https://github.com/open-job/openjob/pull/157)] 秒级任务
+- [[#157](https://github.com/open-job/openjob/pull/157)] 固定频率任务
+
+
 ## V1.0.6
 
 2023年8月7日
 
 **新增**
-[[#141](https://github.com/open-job/openjob/pull/141)] 新增报警(钉钉/企微/飞书/Webhook)
-[[#141](https://github.com/open-job/openjob/pull/141)] 定时任务新增超时
-[[#141](https://github.com/open-job/openjob/pull/141)] 定时任务和延时任务新增失败子状态
-[[#144](https://github.com/open-job/openjob/pull/144)] 定时任务列表新增下一次执行时间
-[[#144](https://github.com/open-job/openjob/pull/144)] 新增个人详情页面和个人信息修改(密码)
-[[#144](https://github.com/open-job/openjob/pull/144)] 首页新增运行中统计
+- [[#141](https://github.com/open-job/openjob/pull/141)] 新增报警(钉钉/企微/飞书/Webhook)
+- [[#141](https://github.com/open-job/openjob/pull/141)] 定时任务新增超时
+- [[#141](https://github.com/open-job/openjob/pull/141)] 定时任务和延时任务新增失败子状态
+- [[#144](https://github.com/open-job/openjob/pull/144)] 定时任务列表新增下一次执行时间
+- [[#144](https://github.com/open-job/openjob/pull/144)] 新增个人详情页面和个人信息修改(密码)
+- [[#144](https://github.com/open-job/openjob/pull/144)] 首页新增运行中统计
 
 **修复**
-[[#144](https://github.com/open-job/openjob/pull/144)] 修复超时日志同步问题
+- [[#144](https://github.com/open-job/openjob/pull/144)] 修复超时日志同步问题
 
 **优化**
-[[#144](https://github.com/open-job/openjob/pull/144)] 优化定时任务实例数据显示
-[[#144](https://github.com/open-job/openjob/pull/144)] Elasticsearch7 自动创建索引
-[[#144](https://github.com/open-job/openjob/pull/144)] 优化用户默认头像
+- [[#144](https://github.com/open-job/openjob/pull/144)] 优化定时任务实例数据显示
+- [[#144](https://github.com/open-job/openjob/pull/144)] Elasticsearch7 自动创建索引
+- [[#144](https://github.com/open-job/openjob/pull/144)] 优化用户默认头像
 
 
 ## V1.0.5
@@ -38,17 +52,17 @@ Openjob 将按月发布功能版本、按年度发布大版本。
 
 **新增**
 
-[[#114](https://github.com/open-job/openjob/pull/114)] 新增 Java Agent
+- [[#114](https://github.com/open-job/openjob/pull/114)] 新增 Java Agent
 
 **修复**
 
-[[#139](https://github.com/open-job/openjob/pull/139)] 修复客户端心跳异常
-[[#139](https://github.com/open-job/openjob/pull/139)] 修复 unix 平台 Kettle 终止失败问题
+- [[#139](https://github.com/open-job/openjob/pull/139)] 修复客户端心跳异常
+- [[#139](https://github.com/open-job/openjob/pull/139)] 修复 unix 平台 Kettle 终止失败问题
 
 **优化**
 
-[[#139](https://github.com/open-job/openjob/pull/139)] 定时任务状态上报
-[[#139](https://github.com/open-job/openjob/pull/139)] 延时任务状态上报
+- [[#139](https://github.com/open-job/openjob/pull/139)] 定时任务状态上报
+- [[#139](https://github.com/open-job/openjob/pull/139)] 延时任务状态上报
 
 ## V1.0.4
 

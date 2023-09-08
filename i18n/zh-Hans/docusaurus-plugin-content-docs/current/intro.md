@@ -7,7 +7,7 @@ Openjob 是一款分布式高性能任务调度框架，支持多种定时任务
 
 ## 特性
 ### 高可靠
-分布式无状态设计，采用 Master/Worker 架构，支持多样的数据库(MySQL/PostgreSQL/Oracle)。
+分布式无状态设计，采用 Master/Worker 架构，支持多样的数据库(H2/MySQL/PostgreSQL/Oracle/TiDB)。
 ### 高性能
 底层使用一致性分片算法，全程无锁化设计，任务调度精确到秒级别，支持轻量级分布式计算、无限水平。
 ### 定时调度

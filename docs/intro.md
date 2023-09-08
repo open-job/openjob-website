@@ -7,7 +7,7 @@ Openjob is a distributed and high-performance task scheduling framework that sup
 
 ## Feature
 ### High reliability
-Distributed with stateless design, using the Master/Worker architecture, supports multiple databases (MySQL/PostgreSQL/Oracle).
+Distributed with stateless design, using the Master/Worker architecture, supports multiple databases (H2/MySQL/PostgreSQL/Oracle/TiDB).
 ### High performance
 System uses a consistency sharding algorithm, lock-free design, task scheduling is accurate down to the second, supporting lightweight distributed computing and unlimited horizontal scaling.
 ### Cronjob
