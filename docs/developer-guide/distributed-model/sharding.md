@@ -4,21 +4,22 @@ sidebar_position: 5
 
 # Sharding
 
-分片模型主要包含静态分片和动态分片:
-- 静态分片：主要场景是处理固定的分片数，例如分库分表中固定 256 个库，需要若干台机器分布式去处理。
-- 动态分片：主要场景是分布式处理未知数据量的数据，例如一张大表在不停变更，需要分布式跑批。此时需要使用 MapReduce 任务
+Sharding model includes static sharding and dynamic sharding:
+- Static sharding: The main scenario is to process a fixed number of sharding. For example, there are 256 databases in sub-databases, which requires many worker to be processed in a distributed.
+- Dynamic sharding: The main scenario is distributed processing of unknown data. For example, a large table is constantly changing and requires distributed batch running.
 
-## 特性
+## Feature
 
-- 兼容 elastic-job 的静态分片模型。
-- 支持 Java、PHP 、Python、Shell、Go四种语言。
-- 高可用：分片任务执行机器异常时，会动态分配到其它正常机器执行任务。
-- 流量控制：可以设置单机子任务并发数。例如有 100 个分片，一共 3 台机器，可以控制最多 5 个分片并发执行，其它在队列中等待。
-- 失败重试：子任务执行失败异常时，自动重试。
+- Compatible with elastic-job’s static sharding.
+- Supports languages: Java, PHP, Python, Shell, and Go.
+- High availability: When the worker that executes a sharding task becomes abnormal, it will be dynamically assigned to other normal worker to execute the task.
+- Flow control: You can set the number of concurrent subtasks for a single worker. For example, if there are 100 sharding and a total of 3 worker, up to 5 sharding can be controlled to execute concurrently, and the others are waiting in the queue.
+- Retry on failure: Automatically retry when subtask execution fails.
 
-## 示例
+## Example
 
-如下使用注解方式定义执行器
+Define executor by annotation as follows:
+
 ```java
 
 /**
@@ -39,9 +40,9 @@ public class ShardingAnnotationProcessor {
 }
 ```
 
-- `jobContext.getShardingId()` 分片编号
-- `jobContext.getShardingParam()` 分片参数
-- `jobContext.getShardingNum()` 总分片数
+- `jobContext.getShardingId()` Sharding id
+- `jobContext.getShardingParam()` Sharding params
+- `jobContext.getShardingNum()` Sharding number
 
 ### Task Detail
 

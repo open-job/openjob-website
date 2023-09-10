@@ -4,16 +4,16 @@ sidebar_position: 4
 
 # Map Reduce
 
-MapReduce 模型是轻量级分布式跑批任务。通过 MapProcessor 或 MapReduceProcessor 接口实现。相对于传统的大数据跑批（例如Hadoop、Spark等），MapReduce无需将数据导入大数据平台，且无额外存储及计算成本，即可实现秒级别海量数据处理，具有成本低、速度快、编程简单等特性。
+MapReduce is a lightweight distributed batch task. Implemented by the MapProcessor or MapReduceProcessor. Compared with big data batch task (such as Hadoop, Spark, etc.), MapReduce does not need to import data into the big data platform, and has no additional storage and computing costs. It can realize second data processing and the advantages of low cost, fast speed and programming.
 
 :::tip
-- 如果使用 reduce，所有子任务结果会缓存在Master节点，该情况对Master节点内存压力较大，建议子任务个数和result返回值不要太大。如果没有reduce需求，使用 MapProcessor 接口。
-- Openjob 不保证子任务绝对执行一次。在特殊条件下会重试，可能导致子任务重复执行，需要业务方自行实现幂等。
+- If reduce is used, all subtask results will be cached in the worker node. This puts a lot of pressure on the worker node memory. Recommended that the number of subtasks and the result return value should not be too large. If no need for reduce, use the MapProcessor.
+- Openjob does not that subtasks will be executed exactly once. Retry will occur under special conditions, which may result in repeated execution of subtasks, requiring the business to implement idempotence.
 :::
 
-## 示例
+## Example
 
-如下使用注解方式定义执行器
+Define executor by annotation as follows:
 
 ```java
 /**

@@ -4,28 +4,31 @@ sidebar_position: 2
 
 # Broadcast
 
-广播任务类型的任务实例会广播到应用对应的所有Worker上执行，当所有Worker都执行完成，该任务才算完成，任意一台Worker执行失败，任务就算失败。
+Broadcast task instance will be broadcast to all workers to the application for execution. Task will be completed when all workers have completed execution. If any worker execute fail, the task will fail.
 
-### 应用场景
-##### 批量操作
-- 定时广播所有机器运行某个脚本。
-- 定时广播所有机器清理数据。
-- 动态启动每台机器的某个服务
+### Application scenarios
 
-##### 数据聚合
-- 使用JavaProcessor->preProcess 初始化
-- 每台机器执行 process 时，根据自己业务返回 result。
-- 执行 postProcess，获取所有机器的执行结果做汇总。
+##### Batch operation
+- Broadcast to all workers to run a script.
+- Broadcast to all workers to cleaning data regularly.
+- Dynamically start a service on each worker
 
-### 任务特性
-广播任务类型可以选择多种，例如脚本或者Java任务。如果选择Java，还支持preProcess和postProcess高级特性。
+##### Data aggregation
+- Initialize using JavaProcessor->preProcess
+- When each worker executes the process, it returns the result according to the business.
+- Execute postProcess to obtain the execution results of all workers.
 
-- preProcess 会在每台机器执行 process 之前执行，且只会执行一次。
-- process 每天机器实际任务执行逻辑。
-- postProcess 会在每台机器执行 process 完成且都成功执行之后执行一次，可以返回结果，作为工作流数据传输。
 
-## 示例
-如下使用注解方式定义执行器
+### Feature
+There are many types of broadcast tasks, such as script or Java Processor. If Java processor, it can supports preProcess and postProcess advanced features.
+
+- preProcess will be executed before each worker execute process, and will only be executed once.
+- process is the actual task execution.
+- postProcess will be executed once after the process execution on each worker is completed and successfully executed, and the results can be returned as data transmission.
+
+
+## Example
+Define executor by annotation as follows:
 
 ```java
 /**
