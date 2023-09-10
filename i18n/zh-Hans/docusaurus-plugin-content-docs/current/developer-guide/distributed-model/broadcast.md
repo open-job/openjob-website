@@ -23,3 +23,39 @@ sidebar_position: 2
 - preProcess 会在每台机器执行 process 之前执行，且只会执行一次。
 - process 每天机器实际任务执行逻辑。
 - postProcess 会在每台机器执行 process 完成且都成功执行之后执行一次，可以返回结果，作为工作流数据传输。
+
+## 示例
+如下使用注解方式定义执行器
+
+```java
+/**
+ * @author stelin swoft@qq.com
+ * @since 1.0.7
+ */
+@Component("broadcastPostProcessor")
+public class BroadcastProcessor implements JavaProcessor {
+    private static final Logger logger = LoggerFactory.getLogger("openjob");
+
+    @Override
+    public void preProcess(JobContext context) {
+        logger.info("Broadcast pre process!");
+    }
+
+    @Override
+    public ProcessResult process(JobContext context) throws Exception {
+        logger.info("Broadcast process!");
+        return new ProcessResult(true, "{\"data\":\"result data\"}");
+    }
+
+    @Override
+    public ProcessResult postProcess(JobContext context) {
+        logger.info("Broadcast post process taskList={}", context.getTaskResultList());
+        System.out.println(context.getTaskResultList());
+        return ProcessResult.success();
+    }
+}
+```
+
+### 任务详情
+
+![img.png](assets/img.png)
