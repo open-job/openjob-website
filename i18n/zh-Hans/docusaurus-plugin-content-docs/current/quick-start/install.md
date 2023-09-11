@@ -14,18 +14,14 @@ docker pull openjob/openjob-server:latest
 
 ### 运行容器
 
-新增一个配置文件 `.env`，配置正确可用的数据库地址。更多配置参数，请参见[配置参考](/docs/developer-guide/config-reference/server)
+新增一个配置文件 `.env`
 
 ```shell
 AKKA_REMOTE_HOSTNAME=LocalIP
-OJ_DS_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-OJ_LOG_STORAGE_MYSQL_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
 ```
 
-:::tip
-1. 数据库必须手动创建
-2. 容器运行涉及多项参数配置，使用配置文件更方便，其次也可以启动时通过命令传递参数(环境变量)。
-3. 配置 `AKKA_REMOTE_HOSTNAME` 为当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通，客户端通过 IP 连接 Server。
+:::caution
+配置 `AKKA_REMOTE_HOSTNAME` 为当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通，客户端通过 IP 连接 Server。
 :::
 
 运行容器
@@ -38,10 +34,30 @@ docker run --env-file .env -it -d -p 8080:8080 -p 25520:25520 openjob/openjob-se
 - 账号: openjob
 - 密码: openjob.io
 
+:::tip
+1.0.7 默认支持 H2 数据库，不用任何配置即可测试
+:::
+
+### 其它数据库
+
+新增一个配置文件 `.env`，配置正确可用的数据库地址。更多配置参数，请参见[配置参考](/docs/developer-guide/config-reference/server)
+
+```shell
+AKKA_REMOTE_HOSTNAME=LocalIP
+OJ_DS_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+OJ_LOG_STORAGE_MYSQL_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+```
+
+:::info
+1. 数据库必须手动创建
+2. 容器运行涉及多项参数配置，使用配置文件更方便，其次也可以启动时通过命令传递参数(环境变量)。
+3. 配置 `AKKA_REMOTE_HOSTNAME` 为当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通，客户端通过 IP 连接 Server。
+:::
+
 ## Docker compose 安装
 
+### H2 数据库
 新建文件 `docker-compose.yml`
-，文件里配置正确可用的数据库地址。更多配置参数，请参见[配置参考](/docs/developer-guide/config-reference/server)
 
 ```yaml
 version: '3'
@@ -52,17 +68,13 @@ services:
     container_name: openjob-server
     environment:
       - AKKA_REMOTE_HOSTNAME=LocalIP
-      - OJ_DS_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-      - OJ_LOG_STORAGE_MYSQL_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     ports:
       - "8080:8080"
       - "25520:25520"
 ```
-:::tip
-1. 数据库必须手动创建
-2. 配置 `AKKA_REMOTE_HOSTNAME` 为当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通，客户端通过 IP 连接 Server。
+:::caution 
+配置 `AKKA_REMOTE_HOSTNAME` 为当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通，客户端通过 IP 连接 Server。
 :::
-
 
 运行容器
 
@@ -79,7 +91,32 @@ docker-compose up -d
 - 密码: openjob.io
 
 :::info
-`docker-compose.yml` 文件同目录执行命令运行容器
+1. `docker-compose.yml` 文件同目录执行命令运行容器
+2. 1.0.7 开始支持默认支持 H2 数据库，不用任何配置即可测试
+:::
+
+### 其它数据库
+
+新建文件 `docker-compose.yml`，文件里配置正确可用的数据库地址。更多配置参数，请参见[配置参考](/docs/developer-guide/config-reference/server)
+
+```yaml
+version: '3'
+services:
+  openjob-server:
+    image: openjob/openjob-server:latest
+    restart: always
+    container_name: openjob-server
+    environment:
+      - AKKA_REMOTE_HOSTNAME=LocalIP
+      - OJ_DS_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      - OJ_LOG_STORAGE_MYSQL_URL=jdbc:mysql://172.20.0.235:3306/openjob?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    ports:
+      - "8080:8080"
+      - "25520:25520"
+```
+:::info
+1. 数据库必须手动创建
+2. 配置 `AKKA_REMOTE_HOSTNAME` 为当前机器 IP，不能是 `127.0.0.1`，否则会导致网络不通，客户端通过 IP 连接 Server。
 :::
 
 ## 常见问题
