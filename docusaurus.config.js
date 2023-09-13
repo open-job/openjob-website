@@ -72,7 +72,7 @@ const config = {
           editUrl:
             'https://github.com/open-job/openjob-website/edit/main/',
           remarkPlugins: [
-            [require('remark-kroki-plugin'), { krokiBase: 'https://kroki.io', lang: "kroki", imgRefDir: "../img/kroki", imgDir: "static/img/kroki" }]
+            [require('remark-kroki-plugin'), { krokiBase: 'https://kroki.io', lang: "kroki", imgRefDir: "/img/kroki", imgDir: "static/img/kroki" }]
           ],
         },
         blog: {
@@ -82,7 +82,7 @@ const config = {
           editUrl:
             'https://github.com/open-job/openjob-website/edit/main/',
           remarkPlugins: [
-            [require('remark-kroki-plugin'), { krokiBase: 'https://kroki.io', lang: "kroki", imgRefDir: "../img/kroki", imgDir: "static/img/kroki" }]
+            [require('remark-kroki-plugin'), { krokiBase: 'https://kroki.io', lang: "kroki", imgRefDir: "/img/kroki", imgDir: "static/img/kroki" }]
           ],
         },
         theme: {
