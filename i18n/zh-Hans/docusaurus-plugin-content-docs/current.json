@@ -52,7 +52,7 @@
     "description": "The generated-index page description for category User Manual in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Cluster": {
-    "message": "集群",
+    "message": "集群通信",
     "description": "The label for category Cluster in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Cluster.link.generated-index.description": {
@@ -178,5 +178,21 @@
   "sidebar.tutorialSidebar.category.Worker Agent.link.generated-index.description": {
     "message": "客户端代理",
     "description": "The generated-index page description for category Worker Agent in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Crontab": {
+    "message": "定时任务",
+    "description": "The label for category Crontab in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Crontab.link.generated-index.description": {
+    "message": "Golang",
+    "description": "The generated-index page description for category Crontab in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Delay Task": {
+    "message": "延时任务",
+    "description": "The label for category Delay Task in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Delay Task.link.generated-index.description": {
+    "message": "Golang",
+    "description": "The generated-index page description for category Delay Task in sidebar tutorialSidebar"
   }
 }

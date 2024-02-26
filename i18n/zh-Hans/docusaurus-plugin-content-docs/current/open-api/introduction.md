@@ -4,19 +4,15 @@ sidebar_position: 1
 
 # 整体概述
 
-```kroki imgType="plantuml" imgTitle="Collaborating containers"
-skinparam ranksep 20
-skinparam dpi 125
-skinparam packageTitleAlignment left
+## 集群通信
+- 客户端启动时，调用上线接口，初始化客户端。 
+- 客户端启动成功，正常运行过程中，间隔(3-5s)上报客户端状态(心跳)。
+- 客户端下线时，调用下线接口，主动下线客户端。
 
-rectangle "Main" {
-  (main.view)
-  (singleton)
-}
-rectangle "Base" {
-  (base.component)
-  (component)
-  (model)
-}
-rectangle "<b>main.ts</b>" as main_ts
-```
+## 定时任务
+
+1. 服务端有新的任务触发，需要执行任务时，会调用客户端固定地址(http://ip:port/submit-job-instance) 执行任务，客户端需要实现执行任务逻辑。
+2. 客户端在任务执行过程中，调用上报任务日志接口，批量上报任务运行日志。
+3. 客户端任务执行完成时，调用服务端接口批量上报任务状态。
+4. 服务端收到任务终止命名时，会触发客户端终止任务，调用客户端固定地址(http://ip:port/stop-job-instance)，客户端需要实现任务终止逻辑。
+5. 服务端特殊场景下，主动检查任务实例是否正常运行，调用客户端固定地址(http://ip:port/check-job-instance)，客户端需要实现任务检查逻辑。
