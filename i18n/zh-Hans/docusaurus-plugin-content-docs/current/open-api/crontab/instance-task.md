@@ -1,14 +1,14 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 ---
 
-# 任务实例检查
+# 实例任务状态
 
-Server 特殊场景需要检查客户端任务实例是否存活。
+批量上报实例任务状态。
 
 ### URL
 
-`/job-instance/check`
+`/openapi/job-instance/handle-tasks`
 
 ### Method
 
@@ -20,7 +20,10 @@ Server 特殊场景需要检查客户端任务实例是否存活。
 
 ### Body
 
-无
+|参数名称|类型| 是否必传 | 示例|描述 |
+| ----- | ----- |-----|--|--|
+|jobId| Long| Y |1 | 任务ID|
+|jobInstanceId|Long| Y |2 | 任务实例ID |
 
 ### Response
 
@@ -33,6 +36,8 @@ Server 特殊场景需要检查客户端任务实例是否存活。
 ```shell
 
 curl -H "Content-Type: application/json" -d '{
+  "jobId": 12345,
+  "jobInstanceId": 67890
 }
 ' "http://127.0.0.1:8080/job-instance/submit"
 
