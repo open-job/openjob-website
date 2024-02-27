@@ -34,7 +34,7 @@ Server 通知客户端终止任务
 
 ```shell
 
-curl -H "Content-Type: application/json" -d '{
+curl -H "Content-Type: application/json" -H "Token: 8uJfew****" -d '{
   "jobId": 12345,
   "jobInstanceId": 67890
 }

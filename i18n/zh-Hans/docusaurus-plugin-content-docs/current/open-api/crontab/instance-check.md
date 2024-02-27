@@ -32,7 +32,7 @@ Server 特殊场景需要检查客户端任务实例是否存活。
 
 ```shell
 
-curl -H "Content-Type: application/json" -d '{
+curl -H "Content-Type: application/json" -H "Token: 8uJfew****" -d '{
 }
 ' "http://127.0.0.1:8080/job-instance/submit"
 

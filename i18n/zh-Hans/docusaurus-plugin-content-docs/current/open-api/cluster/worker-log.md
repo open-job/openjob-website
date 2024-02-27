@@ -47,7 +47,7 @@ sidebar_position: 4
 
 ```shell
 
-curl -H "Content-Type: application/json" -d '{
+curl -H "Content-Type: application/json" -H "Token: 8uJfew****" -d '{
   "fieldList": [
     [
       {"name": "FieldName1", "value": "FieldValue1"},

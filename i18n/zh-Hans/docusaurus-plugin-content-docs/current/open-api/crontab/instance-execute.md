@@ -69,7 +69,7 @@ sidebar_position: 1
 
 ```shell
 
-curl -H "Content-Type: application/json" -d '{
+curl -H "Content-Type: application/json" -H "Token: 8uJfew****" -d '{
   "jobId": 12345,
   "jobInstanceId": 67890,
   "dispatchVersion": 1694004657166,

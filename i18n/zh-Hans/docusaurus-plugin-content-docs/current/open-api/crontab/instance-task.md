@@ -58,7 +58,7 @@ sidebar_position: 3
 
 ```shell
 
-curl -H "Content-Type: application/json" -d '{
+curl -H "Content-Type: application/json" -H "Token: 8uJfew****" -d '{
   "taskRequestList": [
     {
       "jobId": 1,

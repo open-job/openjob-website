@@ -46,7 +46,7 @@ sidebar_position: 2
 
 ```shell
 
-curl -H "Content-Type: application/json" -d '{
+curl -H "Content-Type: application/json" -H "Token: 8uJfew****" -d '{
   "address": "127.0.0.2:8088",
   "appId": 1,
   "appName": "openjob",
